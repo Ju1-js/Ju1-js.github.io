@@ -1,32 +1,70 @@
+
 <!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d9c2729d50ed511d07e0df94d7c8ec0290502f2e">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Ju1-Programs.github.io | A Repository</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Ju1-Programs.github.io" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A Repository" />
+<meta property="og:description" content="A Repository" />
+<link rel="canonical" href="https://ju1-programs.github.io/" />
+<meta property="og:url" content="https://ju1-programs.github.io/" />
+<meta property="og:site_name" content="Ju1-Programs.github.io" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Ju1-Programs.github.io" />
+<script type="application/ld+json">
+{"url":"https://ju1-programs.github.io/","@type":"WebSite","headline":"Ju1-Programs.github.io","description":"A Repository","name":"Ju1-Programs.github.io","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/">
+          <h1>Ju1-Programs.github.io</h1>
+        </a>
+        <h2>A Repository</h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/Ju1-Programs/Ju1-Programs.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p>&lt;!DOCTYPE html&gt;</p>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content=
-  "width=device-width, initial-scale=1.0">
-  <meta property="og:image" content=
-  "https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/unity-512.png">
-  <meta property="og:title" content="Unity Projects Cache">
-  <meta name="title" content="Unity Projects Cache">
-  <meta property="og:description" content=
-  "Unityâ€™s biggest project cache.">
-  <meta name="description" content=
-  "Unityâ€™s biggest project cache.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:image" content="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/unity-512.png" />
+  <meta property="og:title" content="Unity Projects Cache" />
+  <meta name="title" content="Unity Projects Cache" />
+  <meta property="og:description" content="Unityâ€™s biggest project cache." />
+  <meta name="description" content="Unityâ€™s biggest project cache." />
   <title>Unity Projects Cache</title>
-  <link rel="stylesheet" href=
-  "https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity=
-  "sha384-" crossorigin="anonymous"><!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous" /><!--[if lte IE 8]>
         <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
     <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href=
-  "https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" />
   <!--<![endif]-->
   <!--[if lte IE 8]>
             <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
         <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="css/layouts/blog.css">
+  <link rel="stylesheet" href="css/layouts/blog.css" />
   <!--<![endif]-->
 
   <style type="text/css">
@@ -124,29 +162,26 @@
         page if you decline, but your experience may be
         impacted.)</p>
         <p><button class="pure-button button-large">Accept</button>
-        <button class=
-        "pure-button button-large decline-button">Decline</button></p>
+        <button class="pure-button button-large decline-button">Decline</button></p>
       </div>
     </div>
     <div class="sidebar pure-u-1 pure-u-md-1-4">
       <div class="header">
         <h1 class="brand-title">NEVER GONNA</h1>
-        <h2 class="brand-tagline">Give you up.<br>
-        Let you down.<br>
-        Run around.<br>
-        Desert you.<br></h2>
+        <h2 class="brand-tagline">Give you up.<br />
+        Let you down.<br />
+        Run around.<br />
+        Desert you.<br /></h2>
         <h3>You've been rolled.</h3>
-        <nav class="nav">
+<!--        <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="pure-button" href=
-              "https://www.secretrickroll.com">Make your own!</a>
+              <a class="pure-button" href="https://www.secretrickroll.com">Make your own!</a>
             </li>
             <li class="nav-item">
-              <a class="pure-button" href=
-              "http://github.com/sorenrehkopf/custom-rick-roll">About
+              <a class="pure-button" href="http://github.com/sorenrehkopf/custom-rick-roll">About
               this</a>
-            </li>
+            </li>-->
           </ul>
         </nav>
       </div>
@@ -162,18 +197,13 @@
             </header>
             <div class="post-description">
               <div class="vid-div">
-                <div id="vid-blocker"></div><iframe id=
-                "video-frame" src=
-                "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&enablejsapi=1&autoplay=1&mute=1"
-                frameborder="0" allow=
-                "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen name="video-frame"></iframe>
+                <div id="vid-blocker"></div><iframe id="video-frame" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&amp;enablejsapi=1&amp;autoplay=1&amp;mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="video-frame"></iframe>
               </div>
               <p class="post-description">No controls on this
-              video. You have no control over this situation.<br>
-              <br>
-              <br>
-              <br>
+              video. You have no control over this situation.<br />
+              <br />
+              <br />
+              <br />
               ...unless you exit the page.</p>
             </div>
           </section>
@@ -204,8 +234,7 @@
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
   </script> <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src=
-  "https://www.googletagmanager.com/gtag/js?id=UA-94067710-2"></script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-94067710-2"></script>
   
   <script>
 
@@ -216,4 +245,11 @@
   gtag('config', 'UA-94067710-2', { 'anonymize_ip': true });
   </script>
 </body>
+</html>
+
+      </section>
+    </div>
+
+    
+  </body>
 </html>
