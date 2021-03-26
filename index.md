@@ -41,7 +41,6 @@
 
     <div class="container">
       <section id="main_content">
-        <p>&lt;!DOCTYPE html&gt;</p>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -64,7 +63,7 @@
   <!--[if gt IE 8]><!-->
   <link rel="stylesheet" href="css/layouts/blog.css" />
   <!--<![endif]-->
-
+  
   <style type="text/css">
             #cookie-consent {
                 position: fixed;
@@ -174,17 +173,6 @@
         Run around.<br />
         Desert you.<br /></h2>
         <h3>You've been rolled.</h3>
-<!--        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="pure-button" href="https://www.secretrickroll.com">Make your own!</a>
-            </li>
-            <li class="nav-item">
-              <a class="pure-button" href="http://github.com/sorenrehkopf/custom-rick-roll">About
-              this</a>
-            </li>
-          </ul>
-        </nav>-->
       </div>
     </div>
     <div class="content pure-u-1 pure-u-md-3-4">
@@ -198,7 +186,7 @@
             </header>
             <div class="post-description">
               <div class="vid-div">
-                <div id="vid-blocker"></div><iframe id="video-frame" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&amp;enablejsapi=1&amp;autoplay=1&amp;mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="video-frame"></iframe>
+                <div id="vid-blocker"></div><iframe id="video-frame" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&amp;enablejsapi=1&amp;autoplay=1&amp;mute=1" frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="video-frame"></iframe>
               </div>
               <p class="post-description">No controls on this
               video. You have no control over this situation.<br />
@@ -255,12 +243,8 @@
   gtag('config', 'UA-94067710-2', { 'anonymize_ip': true });
   </script>
 </body>
-</html>
-
       </section>
-    </div>
-
-    
+    </div>    
   </body>
 <!-- <script type="text/javascript"  src="https://apiv2.popupsmart.com/api/Bundle/363385" async></script> -->
 </html>
