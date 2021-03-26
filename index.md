@@ -204,7 +204,15 @@
               <br />
               <br />
               <br />
-              ...unless you exit the page.</p>
+              ...unless you exit the page.
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              By:Ju1.js aka. Ju1playz
+              </p>
             </div>
           </section>
         </div>
