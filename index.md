@@ -214,7 +214,7 @@
               <br />
               <br />
               <br />
-              By:Ju1.js aka. Ju1playz
+              By: Ju1.js aka. Ju1playz
               </p>
             </div>
           </section>
