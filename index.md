@@ -181,9 +181,9 @@
             <li class="nav-item">
               <a class="pure-button" href="http://github.com/sorenrehkopf/custom-rick-roll">About
               this</a>
-            </li>-->
+            </li>
           </ul>
-        </nav>
+        </nav>-->
       </div>
     </div>
     <div class="content pure-u-1 pure-u-md-3-4">
