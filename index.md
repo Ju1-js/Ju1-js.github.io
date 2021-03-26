@@ -84,19 +84,22 @@
                 top: 0px;
                 left: 0px;
                 z-index: 101;
-                background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/desktopbg.png');
+                /*background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/desktopbg.png');*/
+                background-image: url('https://www.colorhexa.com/0693e3.png');
                 background-size: cover;
             }
 
             @media only screen and (max-width: 1050px) {
                 .cookie-consent-background {
-                    background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/tabletbg.png');
+                    /*background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/desktopbg.png');*/
+                    background-image: url('https://www.colorhexa.com/0693e3.png');
                 }
             }
 
             @media only screen and (max-width: 550px) {
                 .cookie-consent-background {
-                    background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/mobilebg.png');
+                    /*background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/desktopbg.png');*/
+                    background-image: url('https://www.colorhexa.com/0693e3.png');
                 }
             }
 
@@ -261,3 +264,4 @@
     
   </body>
 </html>
+<!--<script type="text/javascript"  src="https://apiv2.popupsmart.com/api/Bundle/363385" async></script>
