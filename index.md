@@ -23,7 +23,7 @@
       <!-- End Jekyll SEO tag -->
    </head>
    <body>
-      <header>
+      <!--<header>
          <div class="container">
             <a id="a-title" href="/">
                <h1>Ju1-Programs.github.io</h1>
@@ -33,7 +33,7 @@
                <a href="https://github.com/Ju1-Programs/Ju1-Programs.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
             </section>
          </div>
-      </header>
+      </header> (So there is no double, but if you ever host the website off github, uncomment this...)-->
       <div class="container">
          <section id="main_content">
             <head>
