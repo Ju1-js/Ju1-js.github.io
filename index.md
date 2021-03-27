@@ -231,20 +231,17 @@
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
   </script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-94067710-2"></script>
-  
-  <script>
-
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V20FP9DTF5"></script>
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-94067710-2', { 'anonymize_ip': true });
-  </script>
-</body>
+  gtag('config', 'G-V20FP9DTF5');
+</script>
       </section>
     </div>    
-  </body>
+</body>
 <!-- <script type="text/javascript"  src="https://apiv2.popupsmart.com/api/Bundle/363385" async></script> -->
 </html>
