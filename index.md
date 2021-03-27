@@ -197,7 +197,9 @@ By: Ju1.js aka. Ju1playz
 </div>
 </div>
 </div>
+<div class="container">
 <a href="https://jeekie.host"><img src="https://i.imgur.com/2Cy2ko6.gif"</a>
+</div>
 <script type="text/javascript">
 var player;
 var frame = document.querySelector('#video-frame');
