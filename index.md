@@ -191,6 +191,8 @@
                                     <br />
                                     By: Ju1.js aka. Ju1playz
                                  </p>
+                                 <a href="https://jeekie.host">
+                                 <img src="https://i.imgur.com/2Cy2ko6.gif"</a>
                               </div>
                            </section>
                         </div>
