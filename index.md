@@ -20,25 +20,19 @@
 <script type="application/ld+json">
 {"url":"https://ju1-programs.github.io/","@type":"WebSite","headline":"Ju1-Programs.github.io","description":"A Repository","name":"Ju1-Programs.github.io","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-
-  </head>
-
+</head>
   <body>
-
     <header>
       <div class="container">
         <a id="a-title" href="/">
           <h1>Ju1-Programs.github.io</h1>
         </a>
         <h2>A Repository</h2>
-
         <section id="downloads">
-          
           <a href="https://github.com/Ju1-Programs/Ju1-Programs.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
         </section>
       </div>
     </header>
-
     <div class="container">
       <section id="main_content">
 <html lang="en">
@@ -63,7 +57,6 @@
   <!--[if gt IE 8]><!-->
   <link rel="stylesheet" href="css/layouts/blog.css" />
   <!--<![endif]-->
-  
   <style type="text/css">
             #cookie-consent {
                 position: fixed;
@@ -217,19 +210,15 @@
     tag.id = 'iframe-demo';
     tag.src = 'https://www.youtube.com/iframe_api';
     frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
-
     cookieConsent.addEventListener('click', () => {
         player.seekTo(0);
         player.unMute();
         cookieConsent.classList.add('hidden');
     });
-
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('video-frame');
     }
-
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
   </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V20FP9DTF5"></script>
