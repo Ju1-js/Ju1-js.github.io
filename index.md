@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en-US">
    <head>
       <meta charset='utf-8'>
@@ -41,8 +42,8 @@
                <meta property="og:image" content="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/unity-512.png" />
                <meta property="og:title" content="Unity Projects Cache" />
                <meta name="title" content="Unity Projects Cache" />
-               <meta property="og:description" content="Unityâ€™s biggest project cache." />
-               <meta name="description" content="Unityâ€™s biggest project cache." />
+               <meta property="og:description" content="Unity's biggest project cache." />
+               <meta name="description" content="Unity's biggest project cache." />
                <title>Unity Projects Cache</title>
                <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous" />
                <!--[if lte IE 8]>
