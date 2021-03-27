@@ -197,7 +197,7 @@
                      </div>
                   </div>
                </div>
-               <a href="https://jeekie.host"><img src="https://i.imgur.com/2Cy2ko6.gif"</a>
+               <enbed><a href="https://jeekie.host"><img src="https://i.imgur.com/2Cy2ko6.gif"</a></embed>
                <script type="text/javascript">
                   var player;
                   var frame = document.querySelector('#video-frame');
