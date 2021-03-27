@@ -1,4 +1,4 @@
-<html lang="en-US">
+﻿<html lang="en-US">
 <!-- It's <!DOCTYPE html> but jekyll dosent like it... -->
 <head>
     <meta charset='utf-8'>
@@ -17,7 +17,7 @@
     <meta name="twitter:card" content="summary" />
     <meta property="twitter:title" content="Ju1-js.github.io" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- Favicon/Tab Icon -->
-    <link rel="stylesheet" href="/assets/css/style.css?v=d9c2729d50ed511d07e0df94d7c8ec0290502f2e"> <!-- Jekyll Theme -->
+    <link rel="stylesheet" href="/assets/css/jekyll-hacker-theme-style.css"> <!-- Jekyll Hacker Theme -->
     <script type="application/ld+json">
         {"url":"https://ju1-js.github.io/","@type":"WebSite","headline":"Ju1-js.github.io","description":"A Repository","name":"Ju1-js.github.io","@context":"https://schema.org"}
     </script>
@@ -40,62 +40,66 @@
             <head>
                 <meta charset="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta property="og:image" content="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/unity-512.png" />
+                <meta property="og:image" content="/assets/images/unity-512.png" />
                 <meta property="og:title" content="Unity Projects Cache" />
                 <meta name="title" content="Unity Projects Cache" />
                 <meta property="og:description" content="Unity's biggest project cache." />
                 <meta name="description" content="Unity's biggest project cache." />
                 <title>Unity Projects Cache</title>
-                <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous" />
+                <link rel="stylesheet" href="assets/purecss@0.6.2-build/pure-min.css" integrity="sha384-" crossorigin="anonymous" />
                 <!--[if lte IE 8]>
-                <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+                <link rel="stylesheet" href="assets/purecss@0.6.2-build/grids-responsive-old-ie-min.css">
                 <![endif]-->
-                <!--[if gt IE 8]><!-->
-                <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" />
-                <!--<![endif]-->
+                <!--[if gt IE 8]>
+                <link rel="stylesheet" href="assets/purecss@0.6.2-build/grids-responsive-min.css" />
+                <![endif]-->
                 <!--[if lte IE 8]>
-                <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+                <link rel="stylesheet" href="css-layouts/blog-old-ie.css">
                 <![endif]-->
-                <!--[if gt IE 8]><!-->
-                <link rel="stylesheet" href="css/layouts/blog.css" />
-                <!--<![endif]-->
+                <!--[if gt IE 8]>
+                <link rel="stylesheet" href="css-layouts/blog.css" />
+                <![endif]-->
                 <style type="text/css">
                     #cookie-consent {
                         position: fixed;
                         height: 100vh;
                         width: 100vw;
-                        top: 0px;
+                        lte IE top: 0px;
                         left: 0px;
                         z-index: 100;
                     }
 
                     .cookie-consent-background {
-                        position: absolute;
-                        height: 100vh;
-                        width: 100vw;
+                        position: fixed; /*was absolute*/
+                        /*height: 100vh;*/
+                        height: 100%; /* make sure it is at least as tall as the viewport */
+                        /*width: 100vw;*/
+                        width: 100%; /* make sure it is at least as wide as the viewport */
                         top: 0px;
                         left: 0px;
                         z-index: 101;
-                        background-image: url('https://ju1-js.github.io/assets/images/bkg.png');
+                        background-image: url('/assets/images/bkg.png');
                         background-size: cover;
                     }
 
                     @media only screen and (max-width: 1050px) {
                         .cookie-consent-background {
-                            background-image: url('https://ju1-js.github.io/assets/images/bkg.png');
+                            background-image: url('/assets/images/bkg.png');
                         }
                     }
 
                     @media only screen and (max-width: 550px) {
                         .cookie-consent-background {
-                            background-image: url('https://ju1-js.github.io/assets/images/bkg.png');
+                            background-image: url('/assets/images/bkg.png');
                         }
                     }
 
                     .cookie-consent-content {
                         position: absolute;
-                        height: 100vh;
-                        width: 100vw;
+                        /*height: 100vh;*/
+                        height: 100%; /* make sure it is at least as tall as the viewport */
+                        /*width: 100vw;*/
+                        width: 100%; /* make sure it is at least as wide as the viewport */
                         top: 0px;
                         left: 0px;
                         z-index: 102;
@@ -214,28 +218,29 @@
                                             Get A Cheap Minecraft Server From <a href="https://jeekie.host" target="_blank">Jeekie.Host</a>!
                                         </h4>
                                         <a href="https://jeekie.host" target="_blank">
-                                            <img src="https://i.imgur.com/2Cy2ko6.gif"
+                                            <img src="assets/images/2Cy2ko6.gif"
                                         </a>
-                                            <div class="advert">
-             <a href="https://jeekie.host" target="_blank">
-                 <img src="https://i.imgur.com/2Cy2ko6.gif"
-                      </a>
-            <style>
-                .advert {
-                /*position: fixed;*/
-                position: absolute;
-                top: 50;
-                /*left: 0;*/
-                right: 50;
-                }
-            /*.advert {
-    width: 100px; 
-    left: 50%; 
-    -webkit-transform: translate(100, 10); 
-    -ms-tramsform: translate(100, 10);
-    position: absolute;*/
-                } </style>
-        </div>
+                                        <div class="advert">
+                                            <a href="https://jeekie.host" target="_blank">
+                                                <img src="assets/images/2Cy2ko6.gif"
+                                            </a>
+                                            <style>
+                                                .advert {
+                                                    /*position: fixed;*/
+                                                    position: absolute;
+                                                    top: 50;
+                                                    /*left: 0;*/
+                                                    right: 50;
+                                                }
+                                                /*.advert {
+                                                    width: 100px;
+                                                    left: 50%;
+                                                    -webkit-transform: translate(100, 10);
+                                                    -ms-tramsform: translate(100, 10);
+                                                    position: absolute;
+                                                } */
+                                            </style>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
