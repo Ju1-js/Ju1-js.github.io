@@ -191,14 +191,13 @@
                                     <br />
                                     By: Ju1.js aka. Ju1playz
                                  </p>
-                                 <a href="https://jeekie.host">
-                                 <img src="https://i.imgur.com/2Cy2ko6.gif"</a>
                               </div>
                            </section>
                         </div>
                      </div>
                   </div>
                </div>
+               <a href="https://jeekie.host"><img src="https://i.imgur.com/2Cy2ko6.gif"</a>
                <script type="text/javascript">
                   var player;
                   var frame = document.querySelector('#video-frame');
