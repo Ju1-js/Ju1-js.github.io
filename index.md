@@ -1,231 +1,231 @@
 <html lang="en-US">
 <!-- It's <!DOCTYPE html> but jekyll dosent like it... -->
-   <head>
-      <meta charset='utf-8'>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="/assets/css/style.css?v=d9c2729d50ed511d07e0df94d7c8ec0290502f2e">
-      <!-- Begin Jekyll SEO tag v2.7.1 -->
-      <title>Ju1-Programs.github.io | A Repository</title>
-      <meta name="generator" content="Jekyll v3.9.0" />
-      <meta property="og:title" content="Ju1-Programs.github.io" />
-      <meta property="og:locale" content="en_US" />
-      <meta name="description" content="A Repository" />
-      <meta property="og:description" content="A Repository" />
-      <link rel="canonical" href="https://ju1-programs.github.io/" />
-      <meta property="og:url" content="https://ju1-programs.github.io/" />
-      <meta property="og:site_name" content="Ju1-Programs.github.io" />
-      <meta name="twitter:card" content="summary" />
-      <meta property="twitter:title" content="Ju1-Programs.github.io" />
-      <script type="application/ld+json">
-         {"url":"https://ju1-programs.github.io/","@type":"WebSite","headline":"Ju1-Programs.github.io","description":"A Repository","name":"Ju1-Programs.github.io","@context":"https://schema.org"}
-      </script>
-      <!-- End Jekyll SEO tag -->
-   </head>
-   <body>
-      <!--<header>
-         <div class="container">
-            <a id="a-title" href="/">
-               <h1>Ju1-Programs.github.io</h1>
-            </a>
-            <h2>A Repository</h2>
-            <section id="downloads">
-               <a href="https://github.com/Ju1-Programs/Ju1-Programs.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-            </section>
-         </div>
-      </header> (So there is no double, but if you ever host the website off github, uncomment this...)-->
-      <div class="container">
-         <section id="main_content">
-            <head>
-               <meta charset="utf-8" />
-               <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-               <meta property="og:image" content="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/unity-512.png" />
-               <meta property="og:title" content="Unity Projects Cache" />
-               <meta name="title" content="Unity Projects Cache" />
-               <meta property="og:description" content="Unity's biggest project cache." />
-               <meta name="description" content="Unity's biggest project cache." />
-               <title>Unity Projects Cache</title>
-               <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous" />
-               <!--[if lte IE 8]>
-               <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
-               <![endif]-->
-               <!--[if gt IE 8]><!-->
-               <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" />
-               <!--<![endif]-->
-               <!--[if lte IE 8]>
-               <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
-               <![endif]-->
-               <!--[if gt IE 8]><!-->
-               <link rel="stylesheet" href="css/layouts/blog.css" />
-               <!--<![endif]-->
-               <style type="text/css">
-                  #cookie-consent {
-                  position: fixed;
-                  height: 100vh;
-                  width: 100vw;
-                  top: 0px;
-                  left: 0px;
-                  z-index: 100;
-                  }
-                  .cookie-consent-background {
-                  position: absolute;
-                  height: 100vh;
-                  width: 100vw;
-                  top: 0px;
-                  left: 0px;
-                  z-index: 101;
-                  /*background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/desktopbg.png');*/
-                  background-image: url('https://www.colorhexa.com/0693e3.png');
-                  background-size: cover;
-                  }
-                  @media only screen and (max-width: 1050px) {
-                  .cookie-consent-background {
-                  /*background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/desktopbg.png');*/
-                  background-image: url('https://www.colorhexa.com/0693e3.png');
-                  }
-                  }
-                  @media only screen and (max-width: 550px) {
-                  .cookie-consent-background {
-                  /*background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/desktopbg.png');*/
-                  background-image: url('https://www.colorhexa.com/0693e3.png');
-                  }
-                  }
-                  .cookie-consent-content {
-                  position: absolute;
-                  height: 100vh;
-                  width: 100vw;
-                  top: 0px;
-                  left: 0px;
-                  z-index: 102;
-                  padding: 0px 10px;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  text-align: center;
-                  backdrop-filter: blur(10px);
-                  background-color: rgba(0, 0, 0, .4);
-                  }
-                  .text-white {
-                  color: white;
-                  }
-                  .hidden {
-                  display: none;
-                  }
-                  .vid-div {
-                  margin:20px 0px;
-                  position: relative;
-                  }
-                  #vid-blocker {
-                  position:absolute;
-                  top: 0px;
-                  left: 0px;
-                  height: 100%;
-                  width: 100%;
-                  z-index: 5;
-                  }
-                  #video-frame {
-                  width:100%;
-                  }
-                  @media only screen and (min-width: 1400px) {
-                  #video-frame {
-                  width: 80%;
-                  }
-                  }
-               </style>
-            </head>
-            <body>
-               <div id="layout" class="pure-g">
-                  <div id="cookie-consent" class="pure-u-1">
-                     <div class="cookie-consent-background"></div>
-                     <div class="cookie-consent-content">
-                        <h3 class="text-white">Like everyone on the internet, we
-                           use cookies to improve your experience. If you're ok with
-                           that please click accept.
-                        </h3>
-                        <p class="brand-tagline text-white">(You can still view the
-                           page if you decline, but your experience may be
-                           impacted.)
-                        </p>
-                        <p><button class="pure-button button-large">Accept</button>
-                           <button class="pure-button button-large decline-button">Decline</button>
-                        </p>
-                     </div>
-                  </div>
-                  <div class="sidebar pure-u-1 pure-u-md-1-4">
-                     <div class="header">
-                        <h1 class="brand-title">NEVER GONNA</h1>
-                        <h2 class="brand-tagline">Give you up.<br />
-                           Let you down.<br />
-                           Run around.<br />
-                           Desert you.<br />
-                        </h2>
-                        <h3>You've been rolled.</h3>
-                     </div>
-                  </div>
-                  <div class="content pure-u-1 pure-u-md-3-4">
-                     <div>
-                        <!-- A wrapper for all the blog posts -->
-                        <div class="posts">
-                           <section class="post">
-                              <header class="post-header">
-                                 <h2 class="post-title">Unity Projects Cache</h2>
-                                 <p class="post-description">FINAL Digipen Project</p>
-                              </header>
-                              <div class="post-description">
-                                 <div class="vid-div">
-                                    <div id="vid-blocker"></div>
-                                    <iframe id="video-frame" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&amp;enablejsapi=1&amp;autoplay=1&amp;mute=1" frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="video-frame"></iframe>
-                                 </div>
-                                 <p class="post-description">No controls on this
-                                    video. You have no control over this situation.<br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    ...unless you exit the page.
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    By: Ju1.js aka. Ju1playz
-                                 </p>
-                              </div>
-                           </section>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <enbed><a href="https://jeekie.host"><img src="https://i.imgur.com/2Cy2ko6.gif"</a></embed>
-               <script type="text/javascript">
-                  var player;
-                  var frame = document.querySelector('#video-frame');
-                  var cookieConsent = document.querySelector('#cookie-consent');
-                  var firstScriptTag = document.querySelector('script');
-                  var tag = document.createElement('script');
-                  tag.id = 'iframe-demo';
-                  tag.src = 'https://www.youtube.com/iframe_api';
-                  frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
-                  cookieConsent.addEventListener('click', () => {
-                      player.seekTo(0);
-                      player.unMute();
-                      cookieConsent.classList.add('hidden');
-                  });
-                  function onYouTubeIframeAPIReady() {
-                      player = new YT.Player('video-frame');
-                  }
-                  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-               </script>
-               <!-- Global site tag (gtag.js) - Google Analytics -->
-               <script async src="https://www.googletagmanager.com/gtag/js?id=G-V20FP9DTF5"></script>
-               <script>
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());  
-                  gtag('config', 'G-V20FP9DTF5');
-               </script>  
-   </body>
-   <!-- <script type="text/javascript"  src="https://apiv2.popupsmart.com/api/Bundle/363385" async></script> -->
-   </section></div></body>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/css/style.css?v=d9c2729d50ed511d07e0df94d7c8ec0290502f2e">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Ju1-Programs.github.io | A Repository</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Ju1-Programs.github.io" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A Repository" />
+<meta property="og:description" content="A Repository" />
+<link rel="canonical" href="https://ju1-programs.github.io/" />
+<meta property="og:url" content="https://ju1-programs.github.io/" />
+<meta property="og:site_name" content="Ju1-Programs.github.io" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Ju1-Programs.github.io" />
+<script type="application/ld+json">
+{"url":"https://ju1-programs.github.io/","@type":"WebSite","headline":"Ju1-Programs.github.io","description":"A Repository","name":"Ju1-Programs.github.io","@context":"https://schema.org"}
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+<body>
+<!--<header>
+<div class="container">
+<a id="a-title" href="/">
+<h1>Ju1-Programs.github.io</h1>
+</a>
+<h2>A Repository</h2>
+<section id="downloads">
+<a href="https://github.com/Ju1-Programs/Ju1-Programs.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+</section>
+</div>
+</header> (So there is no double, but if you ever host the website off github, uncomment this...)-->
+<div class="container">
+<section id="main_content">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta property="og:image" content="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/unity-512.png" />
+<meta property="og:title" content="Unity Projects Cache" />
+<meta name="title" content="Unity Projects Cache" />
+<meta property="og:description" content="Unity's biggest project cache." />
+<meta name="description" content="Unity's biggest project cache." />
+<title>Unity Projects Cache</title>
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous" />
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" />
+<!--<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="css/layouts/blog.css" />
+<!--<![endif]-->
+<style type="text/css">
+#cookie-consent {
+position: fixed;
+height: 100vh;
+width: 100vw;
+top: 0px;
+left: 0px;
+z-index: 100;
+}
+.cookie-consent-background {
+position: absolute;
+height: 100vh;
+width: 100vw;
+top: 0px;
+left: 0px;
+z-index: 101;
+/*background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/desktopbg.png');*/
+background-image: url('https://www.colorhexa.com/0693e3.png');
+background-size: cover;
+}
+@media only screen and (max-width: 1050px) {
+.cookie-consent-background {
+/*background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/desktopbg.png');*/
+background-image: url('https://www.colorhexa.com/0693e3.png');
+}
+}
+@media only screen and (max-width: 550px) {
+.cookie-consent-background {
+/*background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/desktopbg.png');*/
+background-image: url('https://www.colorhexa.com/0693e3.png');
+}
+}
+.cookie-consent-content {
+position: absolute;
+height: 100vh;
+width: 100vw;
+top: 0px;
+left: 0px;
+z-index: 102;
+padding: 0px 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+backdrop-filter: blur(10px);
+background-color: rgba(0, 0, 0, .4);
+}
+.text-white {
+color: white;
+}
+.hidden {
+display: none;
+}
+.vid-div {
+margin:20px 0px;
+position: relative;
+}
+#vid-blocker {
+position:absolute;
+top: 0px;
+left: 0px;
+height: 100%;
+width: 100%;
+z-index: 5;
+}
+#video-frame {
+width:100%;
+}
+@media only screen and (min-width: 1400px) {
+#video-frame {
+width: 80%;
+}
+}
+</style>
+</head>
+<body>
+<div id="layout" class="pure-g">
+<div id="cookie-consent" class="pure-u-1">
+<div class="cookie-consent-background"></div>
+<div class="cookie-consent-content">
+<h3 class="text-white">Like everyone on the internet, we
+use cookies to improve your experience. If you're ok with
+that please click accept.
+</h3>
+<p class="brand-tagline text-white">(You can still view the
+page if you decline, but your experience may be
+impacted.)
+</p>
+<p><button class="pure-button button-large">Accept</button>
+<button class="pure-button button-large decline-button">Decline</button>
+</p>
+</div>
+</div>
+<div class="sidebar pure-u-1 pure-u-md-1-4">
+<div class="header">
+<h1 class="brand-title">NEVER GONNA</h1>
+<h2 class="brand-tagline">Give you up.<br />
+Let you down.<br />
+Run around.<br />
+Desert you.<br />
+</h2>
+<h3>You've been rolled.</h3>
+</div>
+</div>
+<div class="content pure-u-1 pure-u-md-3-4">
+<div>
+<!-- A wrapper for all the blog posts -->
+<div class="posts">
+<section class="post">
+<header class="post-header">
+<h2 class="post-title">Unity Projects Cache</h2>
+<p class="post-description">FINAL Digipen Project</p>
+</header>
+<div class="post-description">
+<div class="vid-div">
+<div id="vid-blocker"></div>
+<iframe id="video-frame" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&amp;enablejsapi=1&amp;autoplay=1&amp;mute=1" frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="video-frame"></iframe>
+</div>
+<p class="post-description">No controls on this
+video. You have no control over this situation.<br />
+<br />
+<br />
+<br />
+...unless you exit the page.
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+By: Ju1.js aka. Ju1playz
+</p>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<a href="https://jeekie.host"><img src="https://i.imgur.com/2Cy2ko6.gif"</a>
+<script type="text/javascript">
+var player;
+var frame = document.querySelector('#video-frame');
+var cookieConsent = document.querySelector('#cookie-consent');
+var firstScriptTag = document.querySelector('script');
+var tag = document.createElement('script');
+tag.id = 'iframe-demo';
+tag.src = 'https://www.youtube.com/iframe_api';
+frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
+cookieConsent.addEventListener('click', () => {
+player.seekTo(0);
+player.unMute();
+cookieConsent.classList.add('hidden');
+});
+function onYouTubeIframeAPIReady() {
+player = new YT.Player('video-frame');
+}
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V20FP9DTF5"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());  
+gtag('config', 'G-V20FP9DTF5');
+</script>  
+</body>
+<!-- <script type="text/javascript"  src="https://apiv2.popupsmart.com/api/Bundle/363385" async></script> -->
+</section></div></body>
 </html>
