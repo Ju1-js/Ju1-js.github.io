@@ -17,30 +17,52 @@
     <meta name="twitter:card" content="summary" />
     <meta property="twitter:title" content="Ju1-js.github.io" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- Favicon/Tab Icon -->
-    <link rel="stylesheet" href="/assets/css/jekyll-hacker-theme-style.css"> <!-- Jekyll Hacker Theme -->
+    <link rel="stylesheet" href="assets/css/jekyll-hacker-theme-style.css"> <!-- Jekyll Hacker Theme -->
     <script type="application/ld+json">
         {"url":"https://ju1-js.github.io/","@type":"WebSite","headline":"Ju1-js.github.io","description":"A Repository","name":"Ju1-js.github.io","@context":"https://schema.org"}
     </script>
     <!-- End Jekyll SEO tag -->
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a id="a-title" href="/">
-                <h1>Ju1-js.github.io</h1>
-            </a>
-            <h2>A Repository</h2>
-            <section id="downloads">
-                <a href="https://github.com/Ju1-js/Ju1-js.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-            </section>
-        </div>
-    </header>
+    <!--    <div id="positionabs">
+            <div class="bottom left"></div>
+            <div class="bottom right"></div>
+            <div class="top left"></div>
+            <div class="top right">
+                <div class="advert">
+                    <a href="https://jeekie.host" target="_blank">
+                        <img src="assets/images/2Cy2ko6.gif"
+                    </a></a>
+                    <style>
+                        .advert {
+                            /*position: fixed;*/
+                            position: absolute;
+                            top: 50px;
+                            left: 100px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>-->
+    <div class="main">
+        <header>
+            <div class="container">
+                <a id="a-title" href="/">
+                    <h1>Ju1-js.github.io</h1>
+                </a>
+                <h2>A Repository</h2>
+                <section id="downloads">
+                    <a href="https://github.com/Ju1-js/Ju1-js.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+                </section>
+            </div>
+        </header>
+    </div>
     <div class="container">
         <section id="main_content">
             <head>
                 <meta charset="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta property="og:image" content="/assets/images/unity-512.png" />
+                <meta property="og:image" content="assets/images/unity-512.png" />
                 <meta property="og:title" content="Unity Projects Cache" />
                 <meta name="title" content="Unity Projects Cache" />
                 <meta property="og:description" content="Unity's biggest project cache." />
@@ -78,20 +100,20 @@
                         top: 0px;
                         left: 0px;
                         z-index: 101;
-                        background-image: url('/assets/images/bkg.png');
+                        background-image: url('assets/images/bkg.png');
                         background-repeat: repeat;
                         background-size: auto;
                     }
 
                     @media only screen and (max-width: 1050px) {
                         .cookie-consent-background {
-                            background-image: url('/assets/images/bkg.png');
+                            background-image: url('assets/images/bkg.png');
                         }
                     }
 
                     @media only screen and (max-width: 550px) {
                         .cookie-consent-background {
-                            background-image: url('/assets/images/bkg.png');
+                            background-image: url('assets/images/bkg.png');
                         }
                     }
 
@@ -146,6 +168,31 @@
                             width: 80%;
                         }
                     }
+
+                    .sidenav {
+                        background: green;
+                        width: 250px;
+                        align-self: flex-start;
+                    }
+
+                    .post {
+                        background: red;
+                    }
+
+                    .inlinepost {
+                        display: flex;
+                        flex-wrap: wrap;
+                        min-width: 250px;
+                        padding: 30px;
+                        margin: 30px;
+                        align-items: flex-start;
+                        align-content: flex-start;
+                    }
+
+
+
+
+
                 </style>
             </head>
             <body>
@@ -155,8 +202,8 @@
                         <div class="cookie-consent-content">
                             <h3 class="text-white">
                                 <!--Like everyone on the internet, we
-                                 use cookies to improve your experience. If you're ok with
-                                 that please click accept.-->
+                                use cookies to improve your experience. If you're ok with
+                                that please click accept.-->
                                 We use cookies to improve your experience.
                             </h3>
                             <p class="brand-tagline text-white">
@@ -170,81 +217,66 @@
                             </p>
                         </div>
                     </div>
-                    <div class="sidebar pure-u-1 pure-u-md-1-4">
-                        <div class="header">
-                            <h1 class="brand-title">NEVER GONNA</h1>
-                            <h2 class="brand-tagline">
-                                Give you up.<br />
-                                Let you down.<br />
-                                Run around.<br />
-                                Desert you.<br />
-                            </h2>
-                            <h3>You've been rolled.</h3>
+                    <div class="inlinepost">
+                        <div class="sidenav">
+                            <div class="sidebar pure-u-1 pure-u-md-1-4">
+                                <div class="header">
+                                    <h1 class="brand-title">NEVER GONNA</h1>
+                                    <h2 class="brand-tagline">
+                                        Give you up.<br />
+                                        Let you down.<br />
+                                        Run around.<br />
+                                        Desert you.<br />
+                                    </h2>
+                                    <h3>You've been rolled.    </h3>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content pure-u-1 pure-u-md-3-4">
-                        <div>
-                            <!-- A wrapper for all the blog posts -->
-                            <div class="posts">
-                                <section class="post">
-                                    <header class="post-header">
-                                        <h2 class="post-title">Unity Projects Cache</h2>
-                                        <p class="post-description">Ha Ha Get Rickroll'd</p>
-                                    </header>
-                                    <div class="post-description">
+                        <div class="content pure-u-1 pure-u-md-3-4">
+                            <div>
+                                <!-- A wrapper for all the blog posts -->
+                                <div class="posts">
+                                    <section class="post">
+                                        <header class="post-header">
+                                            <h2 class="post-title">Unity Projects Cache</h2>
+                                            <p class="post-description">Ha Ha Get Rickroll'd</p>
+                                        </header>
+
                                         <div class="vid-div">
                                             <div id="vid-blocker"></div>
-                                            <iframe id="video-frame" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&amp;enablejsapi=1&amp;autoplay=1&amp;mute=1" frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="video-frame"></iframe>
+                                            <iframe id="video-frame" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&amp;enablejsapi=1&amp;autoplay=1&amp;mute=1;loop=1"<!-- loop=1 is a test--> frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="video-frame"></iframe>
                                         </div>
-                                        <p class="post-description">
-                                            No controls on this
-                                            video. You have no control over this situation.<br />
+                                        <div class="post-description">
+
+                                            <p class="post-description">
+                                                No controls on this
+                                                video. You have no control over this situation.<br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                ...unless you exit the page.
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                By: Ju1.js aka. Ju1playz
+                                                <br />
+                                                You will find the link to my platforming game ->here<- when I add it.
+                                            </p>
                                             <br />
                                             <br />
                                             <br />
-                                            ...unless you exit the page.
-                                            <br />
-                                            <br />
-                                            <br />
-                                            <br />
-                                            <br />
-                                            <br />
-                                            By: Ju1.js aka. Ju1playz
-                                            <br />
-                                            You will find the link to my platforming game ->here<- when I add it.
-                                        </p>
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <h4>
-                                            Get A Cheap Minecraft Server From <a href="https://jeekie.host" target="_blank">Jeekie.Host</a>!
-                                        </h4>
-                                        <a href="https://jeekie.host" target="_blank">
-                                            <img src="assets/images/2Cy2ko6.gif"
-                                        </a>
-                                        <div class="advert">
+                                            <h4>
+                                                Get A Cheap Minecraft Server From <a href="https://jeekie.host" target="_blank">Jeekie.Host</a>!
+                                            </h4>
                                             <a href="https://jeekie.host" target="_blank">
                                                 <img src="assets/images/2Cy2ko6.gif"
-                                            </a>
-                                            <style>
-                                                .advert {
-                                                    /*position: fixed;*/
-                                                    position: absolute;
-                                                    top: 50;
-                                                    /*left: 0;*/
-                                                    right: 50;
-                                                }
-                                                /*.advert {
-                                                    width: 100px;
-                                                    left: 50%;
-                                                    -webkit-transform: translate(100, 10);
-                                                    -ms-tramsform: translate(100, 10);
-                                                    position: absolute;
-                                                } */
-                                            </style>
+                                            </a></a>
                                         </div>
-                                    </div>
-                                </section>
+                                    </section>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -279,6 +311,7 @@
             </body>
             <!-- <script type="text/javascript"  src="https://apiv2.popupsmart.com/api/Bundle/363385" async></script> -->
         </section>
+    </div>
     </div>
 </body>
 </html>
