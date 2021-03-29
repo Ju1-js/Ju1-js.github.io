@@ -320,14 +320,15 @@
             tag.src = 'https://www.youtube.com/iframe_api';
             frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
             cookieConsent.addEventListener('click', () => {
-                cookieConsent.classList.add('hidden');
-                player.seekTo(0);
-                player.unMute();
-                    console.log('YouTubeIframeAPI fully loaded and parsed');
-                    player = new YT.Player('video-frame');
-                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-            });
-            }
+                 cookieConsent.classList.add('hidden');
+                 player.seekTo(0);
+                 player.unMute();
+                });
+                 function onYouTubeIframeAPIReady() {
+                     console.log('YouTubeIframeAPI fully loaded and parsed');
+                     player = new YT.Player('video-frame');
+                 }
+                 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
         });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
