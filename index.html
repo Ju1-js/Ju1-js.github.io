@@ -309,6 +309,7 @@
     </div>
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function (event) {
+            function onYouTubeIframeAPIReady() {
             console.log('DOM fully loaded and parsed');
             var player;
             var frame = document.querySelector('#video-frame');
@@ -320,14 +321,13 @@
             frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
             cookieConsent.addEventListener('click', () => {
                 cookieConsent.classList.add('hidden');
-                function onYouTubeIframeAPIReady() {
+                player.seekTo(0);
+                player.unMute();
                     console.log('YouTubeIframeAPI fully loaded and parsed');
                     player = new YT.Player('video-frame');
-                    player.seekTo(0);
-                    player.unMute();
-                }
                 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
             });
+            }
         });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
