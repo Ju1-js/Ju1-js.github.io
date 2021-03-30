@@ -333,9 +333,9 @@
             });
             function onYouTubeIframeAPIReady() {
                 console.log('YouTubeIframeAPI fully loaded and parsed');
-                player = new YT.Player('video-frame');
+                player = new Player('video-frame');
             }
-        firstScriptTag.parentNode.insertBefore(tag.get(0), firstScriptTag.get(0));
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V20FP9DTF5"></script>
