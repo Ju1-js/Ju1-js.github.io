@@ -308,27 +308,27 @@
             </div>
     </div>
     <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function (event) {
-            console.log('DOM fully loaded and parsed');
-            var player;
-            var frame = document.querySelector('#video-frame');
-            var cookieConsent = document.querySelector('#cookie-consent');
-            var firstScriptTag = document.querySelector('script');
-            var tag = document.createElement('script');
-            tag.id = 'iframe-demo';
-            tag.src = 'https://www.youtube.com/iframe_api';
-            frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
-            cookieConsent.addEventListener('click', () => {
-                cookieConsent.classList.add('hidden');
-                player.seekTo(0);
-                player.unMute();
-            });
-            function onYouTubeIframeAPIReady() {
+        function onYouTubeIframeAPIReady() {
+            document.addEventListener("DOMContentLoaded", function (event) {
+                console.log('DOM fully loaded and parsed');
+                var player;
+                var frame = document.querySelector('#video-frame');
+                var cookieConsent = document.querySelector('#cookie-consent');
+                var firstScriptTag = document.querySelector('script');
+                var tag = document.createElement('script');
+                tag.id = 'iframe-demo';
+                tag.src = 'https://www.youtube.com/iframe_api';
+                frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
+                cookieConsent.addEventListener('click', () => {
+                    cookieConsent.classList.add('hidden');
+                    player.seekTo(0);
+                    player.unMute();
+                });
                 console.log('YouTubeIframeAPI fully loaded and parsed');
                 player = new YT.Player('video-frame');
-            }
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        });
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            });
+        }
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V20FP9DTF5"></script>
