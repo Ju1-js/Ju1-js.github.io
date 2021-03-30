@@ -320,14 +320,14 @@
             frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
             cookieConsent.addEventListener('click', () => {
                 cookieConsent.classList.add('hidden');
-                function onYouTubeIframeAPIReady() {
-                    console.log('YouTubeIframeAPI fully loaded and parsed');
-                    player = new YT.Player('video-frame');
-                    player.seekTo(0);
-                    player.unMute();
-                }
-                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                player.seekTo(0);
+                player.unMute();
             });
+            function onYouTubeIframeAPIReady() {
+                console.log('YouTubeIframeAPI fully loaded and parsed');
+                player = new YT.Player('video-frame');
+            }
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
         });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
