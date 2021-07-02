@@ -188,13 +188,6 @@
                     justify-content: space-around;
                 }
 
-                .flexcontainer1 {
-                    /*display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;*/
-                    display: block;
-                }
-
                 /*.flex-child {
                     border: 2px solid yellow;
                 }*/
@@ -218,7 +211,7 @@
 
 
             <div id="layout" class="pure-g">
-                <div id="cookie-consent" class="pure-u-1">
+                <div id="cookie-consent" class="pure-u-1" hidden>
                     <div class="cookie-consent-background"></div>
                     <div class="cookie-consent-content">
                         <h3 class="text-white">
@@ -238,8 +231,6 @@
                         </p>
                     </div>
                 </div>
-                <div class="flexcontainer1">
-                    <div class="flex-child-magenta">
                         <div class="inlinepost">
                             <div class="sidenav">
                                 <div class="sidebar pure-u-1 pure-u-md-1-4">
@@ -256,9 +247,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="flex-child-green">
                         <div class="content pure-u-1 pure-u-md-3-4">
                             <div>
                                 <!-- A wrapper for all the blog posts -->
@@ -306,8 +294,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
             </div>
     </div>
     <!--    <script type="text/javascript">
@@ -359,12 +345,6 @@
         }
 
         cookieConsent.addEventListener('click', () => {
-                    
-            document.getElementById("flex-child-green").style.display = "flex";
-            document.getElementById("flex-child-green").style.flexDirection = "column";
-            document.getElementById("flex-child-magenta").style.display = "flex";
-            document.getElementById("flex-child-magenta").style.flexDirection = "column";
-
             player.seekTo(0);
             player.unMute();
             cookieConsent.classList.add('hidden');
