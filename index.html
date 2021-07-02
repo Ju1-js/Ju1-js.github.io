@@ -182,9 +182,10 @@
 
 
                 .flex-container {
-                    display: flex;
+                    /*display: flex;
                     flex-direction: row;
-                    justify-content: space-around;
+                    justify-content: space-around;*/
+                    display: block;
                 }
 
                 /*.flex-child {
@@ -198,8 +199,9 @@
                     }
 
                     .flex-child magenta {
-                        display: flex;
-                        flex-direction: column;
+                        /*display: flex;
+                        flex-direction: column;*/
+                        display: block;
                     }
                 .advert {
                     width: auto;
@@ -351,8 +353,16 @@
         }
 
         cookieConsent.addEventListener('click', () => {
+            
+                    document.getElementById("flex-container").style.display = "flex";
+                    document.getElementById("flex-container").style.flexDirection = "row";
+                    document.getElementById("flex-container").style.justifyContent = "space-around";
+
             document.getElementById("flex-child-green").style.display = "flex";
             document.getElementById("flex-child-green").style.flexDirection = "column";
+            document.getElementById("flex-child-magenta").style.display = "flex";
+            document.getElementById("flex-child-magenta").style.flexDirection = "column";
+
             player.seekTo(0);
             player.unMute();
             cookieConsent.classList.add('hidden');
