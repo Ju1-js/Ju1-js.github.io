@@ -343,10 +343,11 @@
         var tag = document.createElement('script');
         tag.id = 'iframe-demo';
         tag.src = 'https://www.youtube.com/iframe_api';
-        frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
+        /*frame.setAttribute('height', Math.floor(frame.clientWidth * .6));*/
 
         function onYouTubeIframeAPIReady() {
             console.log('YouTubeIframeAPI fully loaded and parsed');
+            frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
             player = new YT.Player('video-frame');
         }
 
