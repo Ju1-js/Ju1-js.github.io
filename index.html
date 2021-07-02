@@ -189,13 +189,14 @@
                     justify-content: space-around;
                 }
 
-                /*//.flex-child {
+                /*.flex-child {
                     border: 2px solid yellow;
                 }*/
 
                     .flex-child green {
-                        display: flex;
-                        flex-direction: column;
+                        /*display: flex;
+                        flex-direction: column;*/
+                        display: block;
                     }
 
                     .flex-child magenta {
@@ -352,6 +353,8 @@
         }
 
         cookieConsent.addEventListener('click', () => {
+            document.getElementById("flex-child-green").style.display = "flex";
+            document.getElementById("flex-child-green").style.flexDirection = "column";
             player.seekTo(0);
             player.unMute();
             cookieConsent.classList.add('hidden');
