@@ -275,16 +275,17 @@
 
                                             //https://ju1-js.github.io/?m=1
                                             const url_string = "https://ju1-js.github.io/?m=1";
-
-                                            const url_object = new URL(url_string);
-                                            const m = url_object.searchParams.get("m");
-                                            console.log(m);
-                                            var menu = true;
-                                            if (m != 0) {
-                                                menu = true;
-                                            }
-                                            else {
-                                                menu = false;
+                                            {
+                                                const url_object = new URL(url_string);
+                                                const m = url_object.searchParams.get("m");
+                                                console.log(m);
+                                                var menu = true;
+                                                if (m != 0) {
+                                                    menu = true;
+                                                }
+                                                else {
+                                                    menu = false;
+                                                }
                                             }
                                             var iframe = document.querySelector('iframe');
                                             var player = new Vimeo.Player(iframe);
