@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ju1-js.github.io | A Repository</title>
+    <title>Ju1-js.github.io | A Unity Game Cache</title>
     <meta name="generator" content="Jekyll v3.9.0">
-    <meta property="og:title" content="Genshin Impact Art Cache">
-    <meta property="og:image" content="assets/images/favicon.png">
+    <meta property="og:title" content="My Unity Game Cache">
+    <meta property="og:image" content="favicon.ico">
     <meta property="og:locale" content="en_US">
-    <meta name="description" content="A Genshin Impact Art Cache.">
-    <meta property="og:description" content="A Genshin Impact Art Cache.">
+    <meta name="description" content="A Unity Game Cache.">
+    <meta property="og:description" content="Unity's Biggest Game Cache.">
     <link rel="canonical" href="https://ju1-js.github.io/">
     <meta property="og:url" content="https://ju1-js.github.io/">
     <meta property="og:site_name" content="Ju1-js.github.io">
@@ -27,7 +27,7 @@
         src="https://www.youtube.com/s/player/38c5f870/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
     <script id="iframe-demo" src="https://www.youtube.com/iframe_api"></script>
     <script type="application/ld+json">
-        {"url":"https://ju1-js.github.io/","@type":"WebSite","headline":"Ju1-js.github.io","description":"A Genshin Impact Art Cache.","name":"Ju1-js.github.io","@context":"https://schema.org"}
+        {"url":"https://ju1-js.github.io/","@type":"WebSite","headline":"Ju1-js.github.io","description":"Unity's Biggest Game Cache.","name":"Ju1-js.github.io","@context":"https://schema.org"}
     </script>
 
 
@@ -42,7 +42,7 @@
                         <a id="a-title" href="/">
                             <h1>Ju1-js.github.io</h1>
                         </a>
-                        <h2>A Repository</h2>
+                        <h2>A Unity Game Cache</h2>
                         <section id="downloads">
                             <a href="https://github.com/Ju1-js/Ju1-js.github.io" class="btn btn-github"><span
                                     class="icon"></span>View on GitHub</a>
@@ -248,7 +248,7 @@
                     </div>
                 </div>
                 <div class="inlinepost">
-                    <div class="sidenav">
+                    <div id="sidenav" class="sidenav hidden">
                         <div class="sidebar pure-u-1 pure-u-md-1-4">
                             <div class="header">
                                 <h1 class="brand-title">NEVER GONNA</h1>
@@ -267,8 +267,8 @@
                             <div class="posts">
                                 <section class="post">
                                     <header class="post-header">
-                                        <h2 class="post-title">Genshin Impact Art Cache</h2>
-                                        <div class="textsunglasses">
+                                        <h2 class="post-title">An Untitled Goose Game</h2>
+                                        <div id="textsunglasses" class="textsunglasses hidden">
                                             <p class="post-description">Jk ha ha Get Rickroll'd In 4k</p>
                                             <img class="tipsunglasses" src="assets/images/tipsunglasses.png"
                                                 alt="Cool Sunglasses" height="49" width="70">
@@ -277,8 +277,13 @@
                                     <div class="vid-div">
                                         <div id="vid-blocker"></div>
                                         <div style="padding:80% 0 0 0;position:relative;">
-                                            <iframe
+                                            <!--<iframe
                                                 src="https://player.vimeo.com/video/520710313?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
+                                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                                frameborder="0" allow="autoplay; fullscreen; picture-in-picture">
+                                            </iframe>-->
+                                            <iframe
+                                                src="https://player.vimeo.com/video/363942153?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
                                                 style="position:absolute;top:0;left:0;width:100%;height:100%;"
                                                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture">
                                             </iframe>
@@ -290,8 +295,13 @@
                                                 var player = new Vimeo.Player(iframe);
 
                                                 var cookieConsent = document.querySelector('#cookie-consent');
+                                                var sidenav = document.querySelector('#sidenav');
+                                                var textsunglasses = document.querySelector('#textsunglasses');
                                                 cookieConsent.addEventListener('click', () => {
                                                     cookieConsent.classList.add('hidden');
+                                                    sidenav.classList.remove('hidden');
+                                                    textsunglasses.classList.remove('hidden');
+                                                    player.loadVideo(520710313);
                                                     player.setCurrentTime(0);
                                                     player.setVolume(1);
                                                 });
