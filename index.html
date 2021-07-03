@@ -1,11 +1,10 @@
-﻿<html lang="en-US">
-<!-- It's <!DOCTYPE html> but jekyll dosent like it... -->
+﻿<!DOCTYPE html>
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Begin Jekyll SEO tag v2.7.1 -->
     <title>Ju1-js.github.io | A Repository</title>
     <meta name="generator" content="Jekyll v3.9.0">
     <meta property="og:title" content="Genshin Impact Art Cache">
@@ -18,11 +17,12 @@
     <meta property="og:site_name" content="Ju1-js.github.io">
     <meta name="twitter:card" content="summary">
     <meta property="twitter:title" content="Ju1-js.github.io">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- Favicon/Tab Icon -->
-    <link rel="stylesheet" href="assets/purecss@0.6.2-build/grids-responsive-min.css"> <!-- Pure css buttons-->
-    <link rel="stylesheet" href="assets/purecss@0.6.2-build/pure-min.css"> <!-- Pure css buttons-->
-    <link rel="stylesheet" href="assets/css/jekyll-hacker-theme-style.css"> <!-- Jekyll Hacker Theme -->
-    <!--<script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/38c5f870/www-widgetapi.vflset/www-widgetapi.js" async=""></script>-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/purecss@0.6.2-build/grids-responsive-min.css">
+    <link rel="stylesheet" href="assets/purecss@0.6.2-build/pure-min.css">
+    <link rel="stylesheet" href="assets/css/jekyll-hacker-theme-style.css">
+    <script type="text/javascript" id="www-widgetapi-script"
+        src="https://www.youtube.com/s/player/38c5f870/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
     <script type="text/javascript" id="www-widgetapi-script"
         src="https://www.youtube.com/s/player/38c5f870/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
     <script id="iframe-demo" src="https://www.youtube.com/iframe_api"></script>
@@ -67,8 +67,6 @@
                     box-sizing: border-box;
                 }
 
-                /* LAYOUT CSS */
-
                 @media (min-width: 48em) {
                     .content {
                         padding: 2em 3em 0;
@@ -87,7 +85,7 @@
                     }
                 }
 
-                /*#cookie-consent {
+                #cookie-consent {
                     position: fixed;
                     height: 100vh;
                     width: 100vw;
@@ -134,7 +132,7 @@
                     justify-content: center;
                     text-align: center;
                     vertical-align: middle;
-                }*/
+                }
 
                 .text-white {
                     color: white;
@@ -206,18 +204,37 @@
                     width: auto;
                     height: auto;
                 }
+
+                .textsunglasses {
+                    top: 0;
+                    display: flex;
+                    align-items:center;
+                    flex-direction: row;
+                    justify-content: start;
+                }
+
+                .postdescription {
+                    display: flex;
+                    flex-direction: column;
+                    order: 0;
+                    margin: 0 10px;
+                }
+
+                .tipsunglasses {
+                    display: flex;
+                    order: 1;
+                    margin: 0 10px;
+                }
+
             </style>
 
 
             <div id="layout" class="pure-g">
-                <!-- <div id="cookie-consent" class="pure-u-1">
+                <div id="cookie-consent" class="pure-u-1">
                     <div class="cookie-consent-background"></div>
                     <div class="cookie-consent-content">
-                        <h3 class="text-white"> -->
-                <!--Like everyone on the internet, we
-                            use cookies to improve your experience. If you're ok with
-                            that please click accept.-->
-                <!-- We use cookies to improve your experience.
+                        <h3 class="text-white">
+                            We use cookies to improve your experience.
                         </h3>
                         <p class="brand-tagline text-white">
                             (You can still view the
@@ -229,7 +246,7 @@
                             <button class="pure-button button-large decline-button">Decline</button>
                         </p>
                     </div>
-                </div> -->
+                </div>
                 <div class="inlinepost">
                     <div class="sidenav">
                         <div class="sidebar pure-u-1 pure-u-md-1-4">
@@ -247,15 +264,18 @@
                     </div>
                     <div class="content pure-u-1 pure-u-md-3-4">
                         <div>
-                            <!-- A wrapper for all the blog posts -->
                             <div class="posts">
                                 <section class="post">
                                     <header class="post-header">
                                         <h2 class="post-title">Genshin Impact Art Cache</h2>
-                                        <p class="post-description">Jk ha ha Get Rickroll'd</p>
+                                        <div class="textsunglasses">
+                                            <p class="post-description">Jk ha ha Get Rickroll'd In 4k</p>
+                                            <img class="tipsunglasses" src="assets/images/tipsunglasses.png"
+                                                alt="Cool Sunglasses" height="49" width="70">
+                                        </div>
                                     </header>
                                     <div class="vid-div">
-                                        <!-- <div id="vid-blocker"></div> -->
+                                        <div id="vid-blocker"></div>
                                         <div style="padding:80% 0 0 0;position:relative;">
                                             <iframe
                                                 src="https://player.vimeo.com/video/520710313?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
@@ -266,14 +286,12 @@
                                         <script src="https://player.vimeo.com/api/player.js"></script>
                                         <script>
                                             document.addEventListener("DOMContentLoaded", function (event) {
-                                                var cookieConsent = document.querySelector('#cookie-consent');
-                                                cookieConsent.classList.add('hidden');
-
                                                 var iframe = document.querySelector('iframe');
                                                 var player = new Vimeo.Player(iframe);
 
-                                                player.ready().then(function () {
-                                                    // The player is ready
+                                                var cookieConsent = document.querySelector('#cookie-consent');
+                                                cookieConsent.addEventListener('click', () => {
+                                                    cookieConsent.classList.add('hidden');
                                                     player.setCurrentTime(0);
                                                     player.setVolume(1);
                                                 });
@@ -317,7 +335,6 @@
             </div>
     </div>
     </div>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V20FP9DTF5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -325,11 +342,6 @@
         gtag('js', new Date());
         gtag('config', 'G-V20FP9DTF5');
     </script>
-
-    <!-- <script type="text/javascript"  src="https://apiv2.popupsmart.com/api/Bundle/363385" async></script> -->
-
-
-
 </body>
 
 </html>
