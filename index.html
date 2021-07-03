@@ -274,18 +274,16 @@
                                         <script>
 
                                             //https://ju1-js.github.io/?m=1
-                                            const url_string = "ju1-js.github.io?m=1";
+                                            const url_string = "https://ju1-js.github.io/?m=1";
 
                                             const url_object = new URL(url_string);
                                             const m = url_object.searchParams.get("m");
                                             console.log(m);
                                             var menu = true;
-                                            if (m != 0)
-                                            {
+                                            if (m != 0) {
                                                 menu = true;
                                             }
-                                            else
-                                            {
+                                            else {
                                                 menu = false;
                                             }
                                             var iframe = document.querySelector('iframe');
@@ -296,24 +294,22 @@
                                             });*/
 
                                             document.addEventListener("DOMContentLoaded", function (event) {
-                                            //console.log('DOM fully loaded and parsed');
-                                            if (menu)
-                                            {
-                                                console.log('Menu ON');
-                                                var cookieConsent = document.querySelector('#cookie-consent');
-                                                cookieConsent.addEventListener('click', () => {
+                                                //console.log('DOM fully loaded and parsed');
+                                                if (menu) {
+                                                    console.log('Menu ON');
+                                                    var cookieConsent = document.querySelector('#cookie-consent');
+                                                    cookieConsent.addEventListener('click', () => {
+                                                        cookieConsent.classList.add('hidden');
+                                                        player.setCurrentTime(0);
+                                                        player.setVolume(1);
+                                                    });
+                                                }
+                                                else {
+                                                    console.log('Menu OFF');
                                                     cookieConsent.classList.add('hidden');
                                                     player.setCurrentTime(0);
                                                     player.setVolume(1);
-                                                });
-                                            }
-                                            else
-                                            {
-                                                console.log('Menu OFF');
-                                                cookieConsent.classList.add('hidden');
-                                                player.setCurrentTime(0);
-                                                player.setVolume(1);
-                                            }
+                                                }
                                             });
 
                                         </script>
