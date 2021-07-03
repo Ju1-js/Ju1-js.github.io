@@ -61,8 +61,6 @@
     <div class="container">
         <section id="main_content">
             <style type="text/css">
-                
-
                 * {
                     -webkit-box-sizing: border-box;
                     -moz-box-sizing: border-box;
@@ -268,7 +266,29 @@
                                     </header>
                                     <div class="vid-div">
                                         <div id="vid-blocker"></div>
-                                        <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/520710313?autoplay=1&loop=1&color=000000&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                        <div style="padding:100% 0 0 0;position:relative;"><iframe
+                                                src="https://player.vimeo.com/video/520710313?autoplay=1&loop=1&autopause=0&muted=1"
+                                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                                frameborder="0" allow="autoplay"></iframe></div>
+                                        <script src="https://player.vimeo.com/api/player.js"></script>
+                                        <script>
+                                            var iframe = document.querySelector('iframe');
+                                            var player = new Vimeo.Player(iframe);
+
+                                            /*player.on('play', function () {
+                                                console.log('Played the video');
+                                            });*/
+                                            document.addEventListener("DOMContentLoaded", function (event) {
+                                            });
+                                            //console.log('DOM fully loaded and parsed');
+                                            var cookieConsent = document.querySelector('#cookie-consent');
+                                            cookieConsent.addEventListener('click', () => {
+                                                cookieConsent.classList.add('hidden');
+                                                player.setCurrentTime(0);
+                                                player.setVolume(1);
+                                            });
+
+                                        </script>
                                     </div>
                                     <div class="post-description">
 
@@ -308,26 +328,6 @@
             </div>
     </div>
     </div>
-    <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function (event) {
-        });
-        console.log('DOM fully loaded and parsed');
-        var player;
-        var frame = document.querySelector('#video-frame');
-        var cookieConsent = document.querySelector('#cookie-consent');
-        var firstScriptTag = document.querySelector('script');
-        var tag = document.createElement('script');
-        tag.id = 'iframe-demo';
-        tag.src = 'https://www.youtube.com/iframe_api';
-        /*frame.setAttribute('height', Math.floor(frame.clientWidth * .6));*/
-
-        cookieConsent.addEventListener('click', () => {
-            cookieConsent.classList.add('hidden');
-        });
-
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V20FP9DTF5"></script>
     <script>
