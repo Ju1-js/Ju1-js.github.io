@@ -272,20 +272,47 @@
                                                 frameborder="0" allow="autoplay"></iframe></div>
                                         <script src="https://player.vimeo.com/api/player.js"></script>
                                         <script>
+
+                                            //https://ju1-js.github.io/?m=1
+                                            var url_string = "https://www.ju1-js.github.io?m=1";
+                                            var url = new URL(url_string);
+                                            var m = url.searchParams.get("m");
+                                            console.log(m);
+                                            var menu = true;
+                                            if (m != 0)
+                                            {
+                                                menu = true;
+                                            }
+                                            else
+                                            {
+                                                menu = false;
+                                            }
                                             var iframe = document.querySelector('iframe');
                                             var player = new Vimeo.Player(iframe);
 
                                             /*player.on('play', function () {
                                                 console.log('Played the video');
                                             });*/
+
                                             document.addEventListener("DOMContentLoaded", function (event) {
-                                            });
                                             //console.log('DOM fully loaded and parsed');
-                                            var cookieConsent = document.querySelector('#cookie-consent');
-                                            cookieConsent.addEventListener('click', () => {
+                                            if (menu)
+                                            {
+                                                console.log('Menu ON');
+                                                var cookieConsent = document.querySelector('#cookie-consent');
+                                                cookieConsent.addEventListener('click', () => {
+                                                    cookieConsent.classList.add('hidden');
+                                                    player.setCurrentTime(0);
+                                                    player.setVolume(1);
+                                                });
+                                            }
+                                            else
+                                            {
+                                                console.log('Menu OFF');
                                                 cookieConsent.classList.add('hidden');
                                                 player.setCurrentTime(0);
                                                 player.setVolume(1);
+                                            }
                                             });
 
                                         </script>
@@ -307,7 +334,6 @@
                                             <br>
                                             By: Ju1.js aka. Ju1playz
                                             <br>
-                                            You will find the link to my platforming game -&gt;here&lt;- when I add it.
                                         </p>
                                         <br>
                                         <br>
