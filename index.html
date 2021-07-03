@@ -1,5 +1,6 @@
 ﻿<html lang="en-US">
 <!-- It's <!DOCTYPE html> but jekyll dosent like it... -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,9 +19,12 @@
     <meta name="twitter:card" content="summary">
     <meta property="twitter:title" content="Ju1-js.github.io">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- Favicon/Tab Icon -->
+    <link rel="stylesheet" href="assets/purecss@0.6.2-build/grids-responsive-min.css"> <!-- Pure css buttons-->
+    <link rel="stylesheet" href="assets/purecss@0.6.2-build/pure-min.css"> <!-- Pure css buttons-->
     <link rel="stylesheet" href="assets/css/jekyll-hacker-theme-style.css"> <!-- Jekyll Hacker Theme -->
     <!--<script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/38c5f870/www-widgetapi.vflset/www-widgetapi.js" async=""></script>-->
-    <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/38c5f870/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
+    <script type="text/javascript" id="www-widgetapi-script"
+        src="https://www.youtube.com/s/player/38c5f870/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
     <script id="iframe-demo" src="https://www.youtube.com/iframe_api"></script>
     <script type="application/ld+json">
         {"url":"https://ju1-js.github.io/","@type":"WebSite","headline":"Ju1-js.github.io","description":"A Unity Project Repository","name":"Ju1-js.github.io","@context":"https://schema.org"}
@@ -28,168 +32,62 @@
 
 
 </head>
+
 <body data-new-gr-c-s-check-loaded="14.1001.0" data-gr-ext-installed="">
     <div class="main">
         <header>
             <div class="flexcontainer">
                 <div class="flex-child-magenta">
-                <div class="container">
-                    <a id="a-title" href="/">
-                        <h1>Ju1-js.github.io</h1>
-                    </a>
-                    <h2>A Repository</h2>
-                    <section id="downloads">
-                        <a href="https://github.com/Ju1-js/Ju1-js.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-                    </section>
-                </div>
+                    <div class="container">
+                        <a id="a-title" href="/">
+                            <h1>Ju1-js.github.io</h1>
+                        </a>
+                        <h2>A Repository</h2>
+                        <section id="downloads">
+                            <a href="https://github.com/Ju1-js/Ju1-js.github.io" class="btn btn-github"><span
+                                    class="icon"></span>View on GitHub</a>
+                        </section>
+                    </div>
                 </div>
                 <div class="flex-child-green">
-                <div class="advert">
-                    <a href="https://jeekie.host" target="_blank">
-                        <img src="assets/images/2Cy2ko6.gif"></a>
-                    </a>
+                    <div class="advert">
+                        <a href="https://jeekie.host" target="_blank">
+                            <img src="assets/images/2Cy2ko6.gif"></a>
+                        </a>
+                    </div>
                 </div>
-            </div>
         </header>
     </div>
     <div class="container">
         <section id="main_content">
             <style type="text/css">
+                
 
+                * {
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                }
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+                /* LAYOUT CSS */
 
-/* LAYOUT CSS */
-.pure-img-responsive {
-    max-width: 100%;
-    height: auto;
-}
+                @media (min-width: 48em) {
+                    .content {
+                        padding: 2em 3em 0;
+                        margin-left: 25%;
+                    }
 
-#layout {
-    padding: 0;
-}
+                    .header {
+                        display: block;
+                        padding-top: 20;
+                        text-align: left;
+                    }
 
-
-
-.content-subhead {
-    text-transform: uppercase;
-    color: #aaa;
-    border-bottom: 1px solid #eee;
-    padding: 0.4em 0;
-    font-size: 80%;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-}
-
-.content {
-    padding: 2em 1em 0;
-}
-
-.post {
-    padding-bottom: 2em;
-}
-.post-title {
-    font-size: 2em;
-    color: #222;
-    margin-bottom: 0.2em;
-}
-.post-avatar {
-    border-radius: 50px;
-    float: right;
-    margin-left: 1em;
-}
-.post-description {
-    font-family: Georgia, "Cambria", serif;
-    color: #444;
-    line-height: 1.8em;
-}
-.post-meta {
-    color: #999;
-    font-size: 90%;
-    margin: 0;
-}
-
-.post-category {
-    margin: 0 0.1em;
-    padding: 0.3em 1em;
-    color: #fff;
-    background: #999;
-    font-size: 80%;
-}
-    .post-category-design {
-        background: #5aba59;
-    }
-    .post-category-pure {
-        background: #4d85d1;
-    }
-    .post-category-yui {
-        background: #8156a7;
-    }
-    .post-category-js {
-        background: #df2d4f;
-    }
-
-.post-images {
-    margin: 1em 0;
-}
-.post-image-meta {
-    margin-top: -3.5em;
-    margin-left: 1em;
-    color: #fff;
-    text-shadow: 0 1px 1px #333;
-}
-
-.footer {
-    padding: 1em 0;
-}
-.footer a {
-    color: #ccc;
-    font-size: 80%;
-}
-.footer .pure-menu a:hover,
-.footer .pure-menu a:focus {
-    background: none;
-}
-
-@media (min-width: 48em) {
-    .content {
-        padding: 2em 3em 0;
-        margin-left: 25%;
-    }
-
-    .header {
-        margin: 80% 2em 0;
-        text-align: right;
-    }
-
-    .sidebar {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-    }
-
-    .footer {
-        text-align: center;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    .sidebar {
+                        position: absolute;
+                        width: 25vw;
+                    }
+                }
 
                 #cookie-consent {
                     position: fixed;
@@ -201,11 +99,14 @@
                 }
 
                 .cookie-consent-background {
-                    position: fixed; /*was absolute*/
+                    position: fixed;
+                    /*was absolute*/
                     /*height: 100vh;*/
-                    height: 100%; /* make sure it is at least as tall as the viewport */
+                    height: 100%;
+                    /* make sure it is at least as tall as the viewport */
                     /*width: 100vw;*/
-                    width: 100%; /* make sure it is at least as wide as the viewport */
+                    width: 100%;
+                    /* make sure it is at least as wide as the viewport */
                     top: 0px;
                     left: 0px;
                     z-index: 101;
@@ -227,11 +128,14 @@
                 }
 
                 .cookie-consent-content {
-                    position: fixed; /* was absolute*/
+                    position: fixed;
+                    /* was absolute*/
                     /*height: 100vh;*/
                     /*width: 100vw;*/
-                    height: 100%; /* make sure it is at least as tall as the viewport */
-                    width: 100%; /* make sure it is at least as wide as the viewport */
+                    height: 100%;
+                    /* make sure it is at least as tall as the viewport */
+                    width: 100%;
+                    /* make sure it is at least as wide as the viewport */
                     top: 0px;
                     left: 0px;
                     z-index: 102;
@@ -300,15 +204,16 @@
                     justify-content: space-around;
                 }
 
-                    .flex-child-green {
-                        display: flex;
-                        flex-direction: column;
-                    }
+                .flex-child-green {
+                    display: flex;
+                    flex-direction: column;
+                }
 
-                    .flex-child-magenta {
-                        display: flex;
-                        flex-direction: column;
-                    }
+                .flex-child-magenta {
+                    display: flex;
+                    flex-direction: column;
+                }
+
                 .advert {
                     width: auto;
                     height: auto;
@@ -337,71 +242,76 @@
                         </p>
                     </div>
                 </div>
-                        <div class="inlinepost">
-                            <div class="sidenav">
-                                <div class="sidebar pure-u-1 pure-u-md-1-4">
-                                    <div class="header">
-                                        <h1 class="brand-title">NEVER GONNA</h1>
-                                        <h2 class="brand-tagline">
-                                            Give you up.<br>
-                                            Let you down.<br>
-                                            Run around.<br>
-                                            Desert you.<br>
-                                        </h2>
-                                        <h3>You've been rolled.    </h3>
-                                    </div>
-                                </div>
+                <div class="inlinepost">
+                    <div class="sidenav">
+                        <div class="sidebar pure-u-1 pure-u-md-1-4">
+                            <div class="header">
+                                <h1 class="brand-title">NEVER GONNA</h1>
+                                <h2 class="brand-tagline">
+                                    Give you up.<br>
+                                    Let you down.<br>
+                                    Run around.<br>
+                                    Desert you.<br>
+                                </h2>
+                                <h3>You've been rolled. </h3>
                             </div>
-                        <div class="content pure-u-1 pure-u-md-3-4">
-                            <div>
-                                <!-- A wrapper for all the blog posts -->
-                                <div class="posts">
-                                    <section class="post">
-                                        <header class="post-header">
-                                            <h2 class="post-title">Unity Projects Cache</h2>
-                                            <p class="post-description">Ha Ha Get Rickroll'd</p>
-                                        </header>
-                                        <div class="vid-div">
-                                            <div id="vid-blocker"></div>
-                                            <iframe id="video-frame" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&amp;enablejsapi=1&amp;autoplay=1&amp;mute=1&loop=1&playlist=dQw4w9WgXcQ&disablekb=1" <!--set playlist id to video id--> frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="video-frame"></iframe>
-                                            <!--<div id="player"></div>-->
-                                        </div>
-                                        <div class="post-description">
+                        </div>
+                    </div>
+                    <div class="content pure-u-1 pure-u-md-3-4">
+                        <div>
+                            <!-- A wrapper for all the blog posts -->
+                            <div class="posts">
+                                <section class="post">
+                                    <header class="post-header">
+                                        <h2 class="post-title">Unity Projects Cache</h2>
+                                        <p class="post-description">Jk ha ha Get Rickroll'd</p>
+                                    </header>
+                                    <div class="vid-div">
+                                        <div id="vid-blocker"></div>
+                                        <iframe id="video-frame"
+                                            src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&amp;enablejsapi=1&amp;autoplay=1&amp;mute=1&loop=1&playlist=dQw4w9WgXcQ&disablekb=1"
+                                            <!--set playlist id to video id--> frameborder="0" allow="accelerometer;
+                                            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen="" name="video-frame"></iframe>
+                                        <!--<div id="player"></div>-->
+                                    </div>
+                                    <div class="post-description">
 
-                                            <p class="post-description">
-                                                No controls on this
-                                                video. You have no control over this situation.<br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                ...unless you exit the page.
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                By: Ju1.js aka. Ju1playz
-                                                <br>
-                                                You will find the link to my platforming game -&gt;here&lt;- when I add it.
-                                            </p>
+                                        <p class="post-description">
+                                            No controls on this
+                                            video. You have no control over this situation.<br>
                                             <br>
                                             <br>
                                             <br>
-                                            <h4>
-                                                Get A Cheap Minecraft Server From <a href="https://jeekie.host" target="_blank">Jeekie.Host</a>!
-                                            </h4>
-                                            <a href="https://jeekie.host" target="_blank">
-                                                <img src="assets/images/2Cy2ko6.gif"></a>
-                                            </a>
-                                        </div>
-                                    </section>
-                                </div>
+                                            ...unless you exit the page.
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            By: Ju1.js aka. Ju1playz
+                                            <br>
+                                            You will find the link to my platforming game -&gt;here&lt;- when I add it.
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <h4>
+                                            Get A Cheap Minecraft Server From <a href="https://jeekie.host"
+                                                target="_blank">Jeekie.Host</a>!
+                                        </h4>
+                                        <a href="https://jeekie.host" target="_blank">
+                                            <img src="assets/images/2Cy2ko6.gif"></a>
+                                        </a>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+    </div>
     </div>
     <!--    <script type="text/javascript">
             /*document.addEventListener("DOMContentLoaded", function (event) {
@@ -434,8 +344,8 @@
         </script>-->
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function (event) {
-            });
-            console.log('DOM fully loaded and parsed');
+        });
+        console.log('DOM fully loaded and parsed');
         var player;
         var frame = document.querySelector('#video-frame');
         var cookieConsent = document.querySelector('#cookie-consent');
@@ -474,4 +384,5 @@
 
 
 </body>
+
 </html>
