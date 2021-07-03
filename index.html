@@ -274,9 +274,10 @@
                                         <script>
 
                                             //https://ju1-js.github.io/?m=1
-                                            var url_string = "https://www.ju1-js.github.io?m=1";
-                                            var url = new URL(url_string);
-                                            var m = url.searchParams.get("m");
+                                            const url_string = "ju1-js.github.io?m=1";
+
+                                            const url_object = new URL(url_string);
+                                            const m = url_object.searchParams.get("m");
                                             console.log(m);
                                             var menu = true;
                                             if (m != 0)
