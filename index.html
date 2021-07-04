@@ -75,7 +75,7 @@
 
                     .header {
                         display: block;
-                        padding-top: 20;
+                        padding-top: 1.5em;
                         text-align: left;
                     }
 
@@ -167,12 +167,15 @@
                 }
 
                 .sidenav {
+
                     width: 250px;
                     align-self: flex-start;
                 }
 
                 .post {
                     float: right;
+                    width: 50vw;
+                    height: 50vw;
                 }
 
 
@@ -208,7 +211,7 @@
                 .textsunglasses {
                     top: 0;
                     display: flex;
-                    align-items:center;
+                    align-items: center;
                     flex-direction: row;
                     justify-content: start;
                 }
@@ -226,6 +229,13 @@
                     margin: 0 10px;
                 }
 
+                #video-player {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
             </style>
 
 
@@ -277,9 +287,8 @@
                                     <div class="vid-div">
                                         <div id="vid-blocker"></div>
                                         <div style="padding:80% 0 0 0;position:relative;">
-                                            <iframe
+                                            <iframe id="video-player"
                                                 src="https://player.vimeo.com/video/363942153?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
-                                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
                                                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture">
                                             </iframe>
                                         </div>
