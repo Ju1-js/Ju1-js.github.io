@@ -53,14 +53,14 @@
             width: 24.99999%;
         }
         
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 900px) {
             .responsive {
                 width: 49.99999%;
                 margin: 6px 0;
             }
         }
         
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 700px) {
             .responsive {
                 width: 100%;
             }
@@ -85,7 +85,7 @@
         <a href="index.html" class="btn btn-back"><span class="icon"></span>Back to main page</a>
     </header>
 
-    <div id="game_area_description" class="game_area_description">
+    <div style="width: 50%" id="game_area_description" class="game_area_description">
         <h2>About This Game</h2>
         It's a lovely morning in the village and you are a horrible goose.
         <br><br>Untitled Goose Game is a slapstick-stealth-sandbox, where you are a goose let loose on an unsuspecting village. Make your way around town, from peoples' back gardens to the high street shops to the village green, setting up pranks, stealing
@@ -105,58 +105,90 @@
         </ul><img src="assets/images/cooppile600.png">
     </div>
     </br>
-    <div class="responsive">
-        <div class="gallery">
-            <img src="assets/images/img1.jpg">
+    <div class="gallery-container">
+        <h1><u>Gallery</u></h1>
+        <div class="responsive">
+            <div class="gallery">
+                <img src="assets/images/img1.jpg">
+            </div>
         </div>
-    </div>
-    <div class="responsive">
-        <div class="gallery">
-            <img width="600" height="400" src="assets/images/img2.jpg">
+        <div class="responsive">
+            <div class="gallery">
+                <img width="600" height="400" src="assets/images/img2.jpg">
+            </div>
         </div>
-    </div>
-    <div class="responsive">
-        <div class="gallery">
-            <img width="600" height="400" src="assets/images/img3.jpg">
+        <div class="responsive">
+            <div class="gallery">
+                <img width="600" height="400" src="assets/images/img3.jpg">
+            </div>
         </div>
-    </div>
-    <div class="responsive">
-        <div class="gallery">
-            <img width="600" height="400" src="assets/images/img4.jpg">
+        <div class="responsive">
+            <div class="gallery">
+                <img width="600" height="400" src="assets/images/img4.jpg">
+            </div>
         </div>
-    </div>
-    <div class="responsive">
-        <div class="gallery">
-            <img width="600" height="400" src="assets/images/img5.jpg">
+        <div class="responsive">
+            <div class="gallery">
+                <img width="600" height="400" src="assets/images/img5.jpg">
+            </div>
         </div>
-    </div>
-    <div class="responsive">
-        <div class="gallery">
-            <img width="600" height="400" src="assets/images/img6.jpg">
+        <div class="responsive">
+            <div class="gallery">
+                <img width="600" height="400" src="assets/images/img6.jpg">
+            </div>
         </div>
-    </div>
-    <div class="responsive">
-        <div class="gallery">
-            <img width="600" height="400" src="assets/images/img7.jpg">
+        <div class="responsive">
+            <div class="gallery">
+                <img width="600" height="400" src="assets/images/img7.jpg">
+            </div>
         </div>
-    </div>
-    <div class="responsive">
-        <div class="gallery">
-            <img width="600" height="400" src="assets/images/img8.jpg">
+        <div class="responsive">
+            <div class="gallery">
+                <img width="600" height="400" src="assets/images/img8.jpg">
+            </div>
         </div>
-    </div>
-    <div class="responsive">
-        <div class="gallery">
-            <img width="600" height="400" src="assets/images/img9.jpg">
+        <div class="responsive">
+            <div class="gallery">
+                <img width="600" height="400" src="assets/images/img9.jpg">
+            </div>
         </div>
-    </div>
-    <div class="responsive">
-        <div class="gallery">
-            <video width="100%" height="100%" poster="assets/images/HONK.jpg" controls="" autoplay="" name="media"><source src="assets/videos/movie480.webm" type="video/webm"></video>
+        <div class="responsive">
+            <div class="gallery">
+                <video onplay="pauseOtherPlayers(video1)" id="video1" width="100%" height="100%" poster="assets/images/HONK.jpg" controls="" name="media"><source src="assets/videos/1movie480.webm" type="video/webm"></video>
+            </div>
         </div>
-    </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video onplay="pauseOtherPlayers(video2)" id="video2" width="100%" height="100%" poster="assets/images/HONK2.jpg" controls="" name="media"><source src="assets/videos/2movie480.webm" type="video/webm"></video>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video onplay="pauseOtherPlayers(video3)" id="video3" width="100%" height="100%" poster="assets/images/HONK3.jpg" controls="" name="media"><source src="assets/videos/3movie480.webm" type="video/webm"></video>
+            </div>
+        </div>
 
-    <div class="clearfix"></div>
+        <script>
+            //onplay="pauseOtherPlayers()"
+            var video1 = document.getElementById('video1');
+            var video2 = document.getElementById('video2');
+            var video3 = document.getElementById('video3');
+
+            function pauseOtherPlayers(donotpause) {
+                if (donotpause == video1) {
+                    video2.pause();
+                    video3.pause();
+                } else if (donotpause == video2) {
+                    video1.pause();
+                    video3.pause();
+                } else if (donotpause == video3) {
+                    video1.pause();
+                    video2.pause();
+                }
+            }
+        </script>
+        <div class="clearfix"></div>
+    </div>
 
 </div>
 
