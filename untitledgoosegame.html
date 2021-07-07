@@ -29,6 +29,49 @@
             "@context": "https://schema.org"
         }
     </script>
+    <style>
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+        
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .responsive {
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-top: 4px;
+            padding-bottom: 0px;
+            float: left;
+            width: 24.99999%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+        
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
 
 </head>
 
@@ -61,4 +104,60 @@
             <li>New goose, new honk, still horrible</li>
         </ul><img src="assets/images/cooppile600.png">
     </div>
+    </br>
+    <div class="responsive">
+        <div class="gallery">
+            <img src="assets/images/img1.jpg">
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <img width="600" height="400" src="assets/images/img2.jpg">
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <img width="600" height="400" src="assets/images/img3.jpg">
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <img width="600" height="400" src="assets/images/img4.jpg">
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <img width="600" height="400" src="assets/images/img5.jpg">
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <img width="600" height="400" src="assets/images/img6.jpg">
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <img width="600" height="400" src="assets/images/img7.jpg">
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <img width="600" height="400" src="assets/images/img8.jpg">
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <img width="600" height="400" src="assets/images/img9.jpg">
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <video width="100%" height="100%" poster="assets/images/HONK.jpg" controls="" autoplay="" name="media"><source src="assets/videos/movie480.webm" type="video/webm"></video>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
 </div>
+
+</html>

@@ -21,11 +21,6 @@
     <link rel="stylesheet" href="assets/purecss@0.6.2-build/grids-responsive-min.css">
     <link rel="stylesheet" href="assets/purecss@0.6.2-build/pure-min.css">
     <link rel="stylesheet" href="assets/css/jekyll-hacker-theme-style.css">
-    <!--<script type="text/javascript" id="www-widgetapi-script"
-        src="https://www.youtube.com/s/player/38c5f870/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
-    <script type="text/javascript" id="www-widgetapi-script"
-        src="https://www.youtube.com/s/player/38c5f870/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
-    <script id="iframe-demo" src="https://www.youtube.com/iframe_api"></script>-->
     <script type="application/ld+json">
         {
             "url": "https://ju1-js.github.io/",
@@ -60,8 +55,8 @@
                 </div>
                 <div class="flex-child-green">
                     <div class="advert">
-                        <a href="https://jeekie.host" target="_blank">
-                            <img src="assets/images/2Cy2ko6.gif"></a>
+                        <a class="advert" href="https://jeekie.host" target="_blank">
+                            <img class="advert" src="assets/images/2Cy2ko6.gif"></a>
                         </a>
                     </div>
                 </div>
@@ -76,10 +71,27 @@
                         box-sizing: border-box;
                     }
                     
+                    @media only screen and (max-width: 425.9px) {
+                        #content {
+                            width: 90vw;
+                            height: 90vw;
+                        }
+                        #posts {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        #post {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    
                     @media (min-width: 48em) {
                         .content {
                             padding: 2em 3em 0;
                             margin-left: 25%;
+                            width: 50vw;
+                            height: 50vw;
                         }
                         .header {
                             display: block;
@@ -187,6 +199,8 @@
                     .flex-child-green {
                         display: flex;
                         flex-direction: column;
+                        width: 50%;
+                        height: 50%;
                     }
                     
                     .flex-child-magenta {
@@ -194,7 +208,7 @@
                         flex-direction: column;
                     }
                     
-                    .advert {
+                    #advert {
                         width: auto;
                         height: auto;
                     }
@@ -261,23 +275,20 @@
                             </div>
                         </div>
                         <div class="content pure-u-1 pure-u-md-3-4">
-                            <div>
-                                <div class="posts">
-                                    <section class="post">
-                                        <header class="post-header">
-                                            <h2 class="post-title">An Untitled Goose Game</h2>
-                                            <div id="textsunglasses" class="textsunglasses hidden">
-                                                <p class="post-description">Jk ha ha Get Rickroll'd In HD</p>
-                                                <img class="tipsunglasses" src="assets/images/tipsunglasses.png" alt="Cool Sunglasses" height="49" width="70">
-                                            </div>
-                                        </header>
-                                        <div class="vid-div">
+                            <div class="posts">
+                                <section class="post">
+                                    <header class="post-header">
+                                        <h2 class="post-title">An Untitled Goose Game</h2>
+                                        <div id="textsunglasses" class="textsunglasses hidden">
+                                            <p class="post-description">Jk ha ha Get Rickroll'd In HD</p>
+                                            <img class="tipsunglasses" src="assets/images/tipsunglasses.png" alt="Cool Sunglasses" height="49" width="70">
+                                        </div>
+                                    </header>
+                                    <div class="vid-div">
+                                        <div id="vid-blocker"></div>
 
-                                            <div id="vid-blocker"></div>
-
-
-                                            <body>
-                                                <video id="video-player1" class="video-js" vjs-theme-forest controls preload="auto" poster="assets/images/tumbnail.jpg" vjs-fluid data-setup="{}">
+                                        <body>
+                                            <video id="video-player1" class="video-js" vjs-theme-forest controls preload="auto" poster="assets/images/tumbnail.jpg" vjs-fluid data-setup="{}">
                                                 <source id="video-player1-source" src="assets/videos/Goose-Crimes.mp4"
                                                     type="video/mp4" />
                                                 <p class="vjs-no-js">
@@ -289,105 +300,104 @@
                                                 </p>
                                             </video>
 
-                                                <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
-                                                <script>
-                                                    document.addEventListener("DOMContentLoaded", function(event) {
-                                                        var player = videojs('video-player1');
-                                                        player.aspectRatio('16:9');
-                                                        player.muted(true);
-                                                        player.autoplay('true');
-                                                        var cookieConsent = document.querySelector('#cookie-consent');
-                                                        var sidenav = document.querySelector('#sidenav');
-                                                        var textsunglasses = document.querySelector('#textsunglasses');
-                                                        var postdescription = document.querySelector('#post-description');
-                                                        var untitledgoosegamebutton = document.querySelector('#untitledgoosegamebutton');
-                                                        var goosecontent = document.querySelector('.goose-content');
+                                            <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+                                            <script>
+                                                document.addEventListener("DOMContentLoaded", function(event) {
+                                                    var player = videojs('video-player1');
+                                                    player.aspectRatio('16:9');
+                                                    player.muted(true);
+                                                    player.autoplay('true');
+                                                    var cookieConsent = document.querySelector('#cookie-consent');
+                                                    var sidenav = document.querySelector('#sidenav');
+                                                    var textsunglasses = document.querySelector('#textsunglasses');
+                                                    var postdescription = document.querySelector('#post-description');
+                                                    var untitledgoosegamebutton = document.querySelector('#untitledgoosegamebutton');
+                                                    var goosecontent = document.querySelector('.goose-content');
 
-                                                        cookieConsent.addEventListener('click', () => {
-                                                            cookieConsent.classList.add('hidden');
-                                                            goosecontent.classList.add('hidden');
-                                                            sidenav.classList.remove('hidden');
-                                                            textsunglasses.classList.remove('hidden');
-                                                            postdescription.classList.remove('hidden');
-                                                            untitledgoosegamebutton.classList.remove('hidden');
-                                                            playVideo("assets/videos/Rick-Astley-Never-Gonna-Give-You-Up-1080p60-60fps.mp4", 'video/mp4');
+                                                    cookieConsent.addEventListener('click', () => {
+                                                        cookieConsent.classList.add('hidden');
+                                                        goosecontent.classList.add('hidden');
+                                                        sidenav.classList.remove('hidden');
+                                                        textsunglasses.classList.remove('hidden');
+                                                        postdescription.classList.remove('hidden');
+                                                        untitledgoosegamebutton.classList.remove('hidden');
+                                                        playVideo("assets/videos/Rick-Astley-Never-Gonna-Give-You-Up-1080p60-60fps.mp4", 'video/mp4');
+                                                    });
+
+                                                    function playVideo(videoSource, type) {
+                                                        if (!player.paused) {
+                                                            player.pause();
+                                                        }
+
+                                                        player.src({
+                                                            type: type,
+                                                            src: videoSource
                                                         });
 
-                                                        function playVideo(videoSource, type) {
-                                                            if (!player.paused) {
-                                                                player.pause();
-                                                            }
+                                                        player.load();
+                                                        player.play();
+                                                        player.muted(false);
+                                                    }
+                                                });
+                                            </script>
+                                        </body>
+                                    </div>
+                                    <div class="post-description">
+                                        <div class="goose-content">
+                                            <header>
+                                                <h1 style="position: relative; left: 45px;" id="goosetitle">Untitled
+                                                    <br> Goose&nbsp;Game
+                                                </h1>
+                                                <h2 class="tagline">by House House</h2>
+                                            </header>
 
-                                                            player.src({
-                                                                type: type,
-                                                                src: videoSource
-                                                            });
-
-                                                            player.load();
-                                                            player.play();
-                                                            player.muted(false);
-                                                        }
-                                                    });
-                                                </script>
-                                            </body>
-                                        </div>
-                                        <div class="post-description">
-                                            <div class="goose-content">
-                                                <header>
-                                                    <h1 style="position: relative; left: 45px;" id="goosetitle">Untitled
-                                                        <br> Goose&nbsp;Game
-                                                    </h1>
-                                                    <h2 class="tagline">by House House</h2>
-                                                </header>
-
-                                                <div id="game_area_description" class="game_area_description">
-                                                    <h2>About This Game</h2>
-                                                    It's a lovely morning in the village and you are a horrible goose.
-                                                    <br><br>Untitled Goose Game is a slapstick-stealth-sandbox, where you are a goose let loose on an unsuspecting village. Make your way around town, from peoples' back gardens to the high street shops
-                                                    to the village green, setting up pranks, stealing hats, honking a lot, and generally ruining everyone’s day.
-                                                    <h2 class="bb_tag">Featuring:</h2>
-                                                    <ul class="bb_ul">
-                                                        <li>A horrible goose (that's you)<br></li>
-                                                        <li>A town full of people just trying to get on with their day (you hate them)<br></li>
-                                                        <li>A dedicated honk button (!!!)</li>
-                                                    </ul><img src="assets/images/chase600.png">
-                                                    <h2 class="bb_tag">AND ALSO</h2>Oh dear! Two horrible geese!<br><br>You can now enjoy Untitled Goose Game with a friend, in a new two-player cooperative mode. Play through the whole game as two horrible geese, honking
-                                                    twice as much, teaming up to plan pranks, and generally ruining everyone's day, together.<br><br>
-                                                    <ul class="bb_ul">
-                                                        <li>A free update for all owners of Untitled Goose Game<br></li>
-                                                        <li>Play through the entire game with two players<br></li>
-                                                        <li>New goose, new honk, still horrible</li>
-                                                    </ul><img src="assets/images/cooppile600.png">
-                                                </div>
+                                            <div id="game_area_description" class="game_area_description">
+                                                <h2>About This Game</h2>
+                                                It's a lovely morning in the village and you are a horrible goose.
+                                                <br><br>Untitled Goose Game is a slapstick-stealth-sandbox, where you are a goose let loose on an unsuspecting village. Make your way around town, from peoples' back gardens to the high street shops to the
+                                                village green, setting up pranks, stealing hats, honking a lot, and generally ruining everyone’s day.
+                                                <h2 class="bb_tag">Featuring:</h2>
+                                                <ul class="bb_ul">
+                                                    <li>A horrible goose (that's you)<br></li>
+                                                    <li>A town full of people just trying to get on with their day (you hate them)<br></li>
+                                                    <li>A dedicated honk button (!!!)</li>
+                                                </ul><img src="assets/images/chase600.png">
+                                                <h2 class="bb_tag">AND ALSO</h2>Oh dear! Two horrible geese!<br><br>You can now enjoy Untitled Goose Game with a friend, in a new two-player cooperative mode. Play through the whole game as two horrible geese, honking twice
+                                                as much, teaming up to plan pranks, and generally ruining everyone's day, together.<br><br>
+                                                <ul class="bb_ul">
+                                                    <li>A free update for all owners of Untitled Goose Game<br></li>
+                                                    <li>Play through the entire game with two players<br></li>
+                                                    <li>New goose, new honk, still horrible</li>
+                                                </ul><img src="assets/images/cooppile600.png">
                                             </div>
-
-
-                                            <p id="post-description" class="post-description hidden">
-                                                No controls on this video. You have no control over this situation.<br>
-                                                <br>
-                                                <br>
-                                                <br> ...unless you exit the page.
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br> By: Ju1.js aka. Ju1playz
-                                                <br>
-                                            </p>
-                                            <br>
-                                            <a id="untitledgoosegamebutton" href="untitledgoosegame.html" class="btn btn-forward hidden"><span class="icon"></span>Genuine Page on: Untitled Goose Game</a>
-                                            <br>
-                                            <br>
-                                            <h4>
-                                                Get A Cheap Minecraft Server From <a href="https://jeekie.host" target="_blank">Jeekie.Host</a>!
-                                            </h4>
-                                            <a href="https://jeekie.host" target="_blank">
-                                                <img src="assets/images/2Cy2ko6.gif"></a>
-                                            </a>
                                         </div>
-                                    </section>
-                                </div>
+
+
+                                        <p id="post-description" class="post-description hidden">
+                                            No controls on this video. You have no control over this situation.<br>
+                                            <br>
+                                            <br>
+                                            <br> ...unless you exit the page.
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br> By: Ju1.js aka. Ju1playz
+                                            <br>
+                                        </p>
+                                        <br>
+                                        <a id="untitledgoosegamebutton" href="untitledgoosegame.html" class="btn btn-forward hidden"><span class="icon"></span>Genuine Page on: Untitled Goose Game</a>
+                                        <br>
+                                        <br>
+                                        <h4>
+                                            Get A Cheap Minecraft Server From <a href="https://jeekie.host" target="_blank">Jeekie.Host</a>!
+                                        </h4>
+                                        <a href="https://jeekie.host" target="_blank">
+                                            <img src="assets/images/2Cy2ko6.gif"></a>
+                                        </a>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
