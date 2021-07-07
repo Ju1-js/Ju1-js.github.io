@@ -315,10 +315,10 @@
                                                     var goosecontent = document.querySelector('.goose-content');
 
                                                     cookieConsent.addEventListener('click', () => {
+                                                        cookieConsent.classList.add('hidden');
                                                         playVideo("assets/videos/Rick-Astley-Never-Gonna-Give-You-Up-1080p60-60fps.mp4", 'video/mp4');
                                                         videojs('video-player1', {}, function() {
                                                             this.on('loadedmetadata', function() {
-                                                                cookieConsent.classList.add('hidden');
                                                                 goosecontent.classList.add('hidden');
                                                                 sidenav.classList.remove('hidden');
                                                                 textsunglasses.classList.remove('hidden');
