@@ -314,17 +314,14 @@
                                                     var untitledgoosegamebutton = document.querySelector('#untitledgoosegamebutton');
                                                     var goosecontent = document.querySelector('.goose-content');
                                                     var githubbutton = document.querySelectir('#btn-githubh');
-                                                    
-                                                    waittillloaded();
-
-                                                    async function waittillloaded () {
+       
                                                     cookieConsent.addEventListener('click', () => {
                                                         cookieConsent.classList.add('hidden');
                                                         playVideo("assets/videos/Rick-Astley-Never-Gonna-Give-You-Up-1080p60-60fps.mp4", 'video/mp4');
                                                         videojs('video-player1', {}, function() {
                                                             this.on('loadedmetadata', function() {
                                                                
-                                                                await sleep(333);
+                                                                sleep(333);
                                                                 
                                                                 githubbutton.classlist.remove('hidden');
                                                                 goosecontent.classList.add('hidden');
@@ -335,13 +332,16 @@
                                                                 
                                                             });
                                                         });
-                                                    });
                                                     }
 
-                                                    function sleep(ms) {
-                                                        return new Promise(resolve => setTimeout(resolve, ms));
+                                                    function sleep(milliseconds) {
+                                                        const date = Date.now();
+                                                        let currentDate = null;
+                                                        do {
+                                                            currentDate = Date.now();
+                                                            } while (currentDate - date < milliseconds);
+                                                        }
                                                     
-                                                    }
                                                     function playVideo(videoSource, type) {
                                                         if (!player.paused) {
                                                             player.pause();
