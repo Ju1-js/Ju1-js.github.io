@@ -39,7 +39,7 @@
 
 <body data-new-gr-c-s-check-loaded="14.1001.0" data-gr-ext-installed="">
     <div class="main">
-        <header>
+        <header style="padding-left: 20px;">
             <div class="flexcontainer">
                 <div class="flex-child-magenta">
                     <div class="container">
@@ -50,6 +50,8 @@
                         <section id="downloads" class="hidden">
                             <a href="https://github.com/Ju1-js/Ju1-js.github.io" class="btn btn-github"><span
                                     class="icon"></span>View on GitHub</a>
+                            <a href="untitledgoosegame.html" class="btn btn-forward"><span class="icon"></span>Untitled Goose Game</a>
+                            <a href="credits.html" class="btn btn-forward"><span class="icon"></span>Credits</a>
                         </section>
                     </div>
                 </div>
@@ -206,6 +208,7 @@
                     .flex-child-magenta {
                         display: flex;
                         flex-direction: column;
+                        width: 50%;
                     }
                     
                     #advert {
@@ -277,14 +280,14 @@
                         <div class="content pure-u-1 pure-u-md-3-4">
                             <div class="posts">
                                 <section class="post">
-                                    <header class="post-header">
+                                    <header class="post-header" style="margin-left: 20px; padding-left: 20px;">
                                         <h2 class="post-title">An Untitled Goose Game</h2>
                                         <div id="textsunglasses" class="textsunglasses hidden">
                                             <p class="post-description">Jk ha ha Get Rickroll'd In HD</p>
                                             <img class="tipsunglasses" src="assets/images/tipsunglasses.png" alt="Cool Sunglasses" height="49" width="70">
                                         </div>
                                     </header>
-                                    <div class="vid-div">
+                                    <div class="vid-div" style="padding-left: 20px;">
                                         <div id="vid-blocker"></div>
 
                                         <body>
@@ -314,34 +317,34 @@
                                                     var untitledgoosegamebutton = document.querySelector('#untitledgoosegamebutton');
                                                     var goosecontent = document.querySelector('.goose-content');
                                                     var githubbutton = document.querySelector('#downloads');
-       
+
                                                     cookieConsent.addEventListener('click', () => {
                                                         cookieConsent.classList.add('hidden');
                                                         playVideo("assets/videos/Rick-Astley-Never-Gonna-Give-You-Up-1080p60-60fps.mp4", 'video/mp4');
                                                         videojs('video-player1', {}, function() {
                                                             this.on('loadedmetadata', function() {
-                                                               
+
                                                                 sleep(333);
-                                                                
-                                                                githubbutton.classlist.remove('hidden');
+
+                                                                githubbutton.classList.remove('hidden');
                                                                 goosecontent.classList.add('hidden');
                                                                 sidenav.classList.remove('hidden');
                                                                 textsunglasses.classList.remove('hidden');
                                                                 postdescription.classList.remove('hidden');
                                                                 untitledgoosegamebutton.classList.remove('hidden');
-                                                                
+
                                                             });
                                                         });
-                                                    }
+                                                    });
 
                                                     function sleep(milliseconds) {
                                                         const date = Date.now();
                                                         let currentDate = null;
                                                         do {
                                                             currentDate = Date.now();
-                                                            } while (currentDate - date < milliseconds);
-                                                        }
-                                                    
+                                                        } while (currentDate - date < milliseconds);
+                                                    }
+
                                                     function playVideo(videoSource, type) {
                                                         if (!player.paused) {
                                                             player.pause();
@@ -360,7 +363,7 @@
                                             </script>
                                         </body>
                                     </div>
-                                    <div class="post-description">
+                                    <div class="post-description" style="padding-left: 20px;">
                                         <div class="goose-content">
                                             <header>
                                                 <h1 style="position: relative; left: 45px;" id="goosetitle">Untitled
