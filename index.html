@@ -321,16 +321,16 @@
                                                         cookieConsent.classList.add('hidden');
                                                         playVideo("assets/videos/Rick-Astley-Never-Gonna-Give-You-Up-1080p60-60fps.mp4", 'video/mp4');
                                                         videojs('video-player1', {}, function() {
-                                                            player.on('loadedmetadata', function() {
-                                                                player.on('playing', function() {
-                                                                await sleep(150);
+                                                            this.on('loadedmetadata', function() {
+                                                               
+                                                                await sleep(333);
                                                                 githubbutton.classlist.remove('hidden');
                                                                 goosecontent.classList.add('hidden');
                                                                 sidenav.classList.remove('hidden');
                                                                 textsunglasses.classList.remove('hidden');
                                                                 postdescription.classList.remove('hidden');
                                                                 untitledgoosegamebutton.classList.remove('hidden');
-                                                                });
+                                                                
                                                             });
                                                         });
                                                     });
