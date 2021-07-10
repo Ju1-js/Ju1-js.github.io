@@ -319,11 +319,13 @@
                                                         playVideo("assets/videos/Rick-Astley-Never-Gonna-Give-You-Up-1080p60-60fps.mp4", 'video/mp4');
                                                         videojs('video-player1', {}, function() {
                                                             this.on('loadedmetadata', function() {
+                                                                this.on('playing', function() {
                                                                 goosecontent.classList.add('hidden');
                                                                 sidenav.classList.remove('hidden');
                                                                 textsunglasses.classList.remove('hidden');
                                                                 postdescription.classList.remove('hidden');
                                                                 untitledgoosegamebutton.classList.remove('hidden');
+                                                                });
                                                             });
                                                         });
                                                         player.on('loadedmetadata', function() {})
