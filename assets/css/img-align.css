@@ -1,0 +1,63 @@
+.imgccontainer {
+    position: relative;
+    text-align: center;
+}
+
+.imgcbottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}
+
+.imgctop-left {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.imgctop-right {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.imgcbottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+.imgccentered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imgccentered-bottom {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imgccentered-top {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 8px);
+}
+
+.imgccentered-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(8px, -50%);
+}
+
+.imgccentered-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-8px, -50%);
+}
