@@ -314,6 +314,7 @@
                                                     var untitledgoosegamebutton = document.querySelector('#untitledgoosegamebutton');
                                                     var goosecontent = document.querySelector('.goose-content');
                                                     var githubbutton = document.querySelectir('#btn-githubh');
+                                                    
                                                     waittillloaded();
 
                                                     async function waittillloaded () {
@@ -324,6 +325,7 @@
                                                             this.on('loadedmetadata', function() {
                                                                
                                                                 await sleep(333);
+                                                                
                                                                 githubbutton.classlist.remove('hidden');
                                                                 goosecontent.classList.add('hidden');
                                                                 sidenav.classList.remove('hidden');
