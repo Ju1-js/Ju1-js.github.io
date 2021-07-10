@@ -48,7 +48,7 @@
                         </a>
                         <h2>My Favorite Unity Games</h2>
                         <section id="downloads">
-                            <a href="https://github.com/Ju1-js/Ju1-js.github.io" class="btn btn-github"><span
+                            <a href="https://github.com/Ju1-js/Ju1-js.github.io" id="btn-githubh" class="btn btn-github hidden"><span
                                     class="icon"></span>View on GitHub</a>
                         </section>
                     </div>
@@ -313,6 +313,7 @@
                                                     var postdescription = document.querySelector('#post-description');
                                                     var untitledgoosegamebutton = document.querySelector('#untitledgoosegamebutton');
                                                     var goosecontent = document.querySelector('.goose-content');
+                                                    var githubbutton = document.querySelectir('#btn-githubh');
                                                     waittillloaded();
 
                                                     async function waittillloaded () {
@@ -323,6 +324,7 @@
                                                             this.on('loadedmetadata', function() {
                                                                 this.on('playing', function() {
                                                                 await sleep(150);
+                                                                githubbutton.classlist.remove('hidden');
                                                                 goosecontent.classList.add('hidden');
                                                                 sidenav.classList.remove('hidden');
                                                                 textsunglasses.classList.remove('hidden');
