@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ju1-js.github.io
+Token: bcd7117199f57d121598ce3d38886f26f886bbfc3e0560af60fe5c1ebe629a3c
