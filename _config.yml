@@ -1,1 +1,2 @@
-include: [.well-known]
+
+includes_dir : .well-known
