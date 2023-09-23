@@ -313,7 +313,7 @@
                                                     player.aspectRatio('16:9');
                                                     player.muted(true);
                                                     player.autoplay('true');
-                                                    var cookieConsent = document.querySelector('#cookie-consent');
+                                                    // var cookieConsent = document.querySelector('#cookie-consent');
                                                     var sidenav = document.querySelector('#sidenav');
                                                     var textsunglasses = document.querySelector('#textsunglasses');
                                                     var postdescription = document.querySelector('#post-description');
@@ -321,7 +321,11 @@
                                                     var goosecontent = document.querySelector('.goose-content');
                                                     var githubbutton = document.querySelector('#downloads');
 
-                                                    cookieConsent.addEventListener('click', () => {
+                                                    //cookieConsent.addEventListener('click', () => {
+                                                    document.addEventListener('click', interaction);
+                                                    document.addEventListener('keydown', interaction);
+
+                                                    function interaction(event) {
                                                         cookieConsent.classList.add('hidden');
                                                         playVideo("assets/videos/Rick-Astley-Never-Gonna-Give-You-Up-1080p60-60fps.mp4", 'video/mp4');
                                                         videojs('video-player1', {}, function() {
@@ -338,8 +342,8 @@
 
                                                             });
                                                         });
-                                                    });
-
+                                                    }
+                                                    
                                                     function sleep(milliseconds) {
                                                         const date = Date.now();
                                                         let currentDate = null;
