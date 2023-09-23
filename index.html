@@ -331,6 +331,9 @@
                                                         catch {
                                                             // Do nothing xD
                                                         }
+                                                        document.removeEventListener("click", interaction);
+                                                        document.removeEventListener("keydown", interaction);
+                                                        
                                                         playVideo("assets/videos/Rick-Astley-Never-Gonna-Give-You-Up-1080p60-60fps.mp4", 'video/mp4');
                                                         videojs('video-player1', {}, function() {
                                                             this.on('loadedmetadata', function() {
