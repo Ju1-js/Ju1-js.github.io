@@ -326,7 +326,9 @@
                                                     document.addEventListener('keydown', interaction);
 
                                                     function interaction(event) {
+                                                        try {
                                                         cookieConsent.classList.add('hidden');
+                                                        }
                                                         playVideo("assets/videos/Rick-Astley-Never-Gonna-Give-You-Up-1080p60-60fps.mp4", 'video/mp4');
                                                         videojs('video-player1', {}, function() {
                                                             this.on('loadedmetadata', function() {
