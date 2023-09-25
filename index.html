@@ -51,10 +51,13 @@
                         <section id="downloads" class="hidden">
                             <a href="https://github.com/Ju1-js/Ju1-js.github.io" class="btn btn-github"><span
                                     class="icon"></span>View on GitHub</a>
-                            <a href="untitledgoosegame.html" class="btn btn-forward"><span class="icon"></span>Untitled Goose Game</a>
+                            <a href="untitledgoosegame.html" class="btn btn-forward"><span class="icon"></span>Untitled
+                                Goose Game</a>
                             <a href="credits.html" class="btn btn-forward"><span class="icon"></span>Credits</a>
-                            <a href="https://ju1-js.github.io/CssPeriodicTable/" class="btn btn-forward"><span class="icon"></span>HTML/CSS Periodic Table</a>
-                            <a href="https://ju1-js.github.io/25th-hour-dynamic/" class="btn btn-forward"><span class="icon"></span>25th Hour Dynamic</a>
+                            <a href="https://ju1-js.github.io/CssPeriodicTable/" class="btn btn-forward"><span
+                                    class="icon"></span>HTML/CSS Periodic Table</a>
+                            <a href="https://ju1-js.github.io/25th-hour-dynamic/" class="btn btn-forward"><span
+                                    class="icon"></span>25th Hour Dynamic</a>
                         </section>
                     </div>
                 </div>
@@ -63,381 +66,408 @@
                         <a class="advert" href="https://jeekie.host" target="_blank">
                             <img class="advert" src="assets/images/2Cy2ko6.gif"></a>
                         </a>-->
-                    </div>
                 </div>
+            </div>
         </header>
-        </div>
-        <div class="container">
-            <section id="main_content">
-                <style type="text/css">
-                    * {
-                        -webkit-box-sizing: border-box;
-                        -moz-box-sizing: border-box;
-                        box-sizing: border-box;
+    </div>
+    <div class="container">
+        <section id="main_content">
+            <style type="text/css">
+                * {
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                }
+
+                @media only screen and (max-width: 425.9px) {
+                    #content {
+                        width: 90vw;
+                        height: 90vw;
                     }
-                    
-                    @media only screen and (max-width: 425.9px) {
-                        #content {
-                            width: 90vw;
-                            height: 90vw;
-                        }
-                        #posts {
-                            width: 100%;
-                            height: 100%;
-                        }
-                        #post {
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
-                    
-                    @media (min-width: 48em) {
-                        .content {
-                            padding: 2em 3em 0;
-                            margin-left: 50px;
-                            width: 50vw;
-                            height: 50vw;
-                        }
-                        .header {
-                            display: block;
-                            padding-top: 1.5em;
-                            text-align: left;
-                        }
-                        .sidebar {
-                            position: absolute;
-                            width: 25vw;
-                            padding-left: 30px;
-                        }
-                    }
-                    
-                    #cookie-consent {
-                        position: fixed;
-                        height: 100vh;
-                        width: 100vw;
-                        top: 0px;
-                        left: 0px;
-                        z-index: 100;
-                    }
-                    
-                    .cookie-consent-background {
-                        position: fixed;
-                        height: 100%;
+
+                    #posts {
                         width: 100%;
-                        top: 0px;
-                        left: 0px;
-                        z-index: 101;
-                    }
-                    
-                    .cookie-consent-content {
-                        position: fixed;
                         height: 100%;
+                    }
+
+                    #post {
                         width: 100%;
-                        top: 0px;
-                        left: 0px;
-                        z-index: 102;
-                        padding: 0px 10px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        text-align: center;
-                        vertical-align: middle;
-                        backdrop-filter: blur(1px);
-                        background-color: rgba(0, 0, 0, .4);
-                    }
-                    
-                    .layout {
-                        position: relative;
-                    }
-                    
-                    .inlinepost {
-                        position: absolute;
-                        left: 0px;
-                    }
-                    
-                    .text-white {
-                        color: white;
-                    }
-                    
-                    .hidden {
-                        display: none;
-                    }
-                    
-                    .vid-div {
-                        margin: 20px 0px;
-                        position: relative;
-                    }
-                    
-                    #vid-blocker {
-                        position: absolute;
-                        top: 0px;
-                        left: 0px;
                         height: 100%;
-                        width: 100%;
-                        z-index: 5;
                     }
-                    
-                    .sidenav {
-                        width: 250px;
-                        align-self: flex-start;
-                    }
-                    
-                    .post {
-                        float: right;
+                }
+
+                @media (min-width: 48em) {
+                    .content {
+                        padding: 2em 3em 0;
+                        margin-left: 50px;
                         width: 50vw;
                         height: 50vw;
                     }
-                    
-                    .inlinepost {
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: flex-start;
-                        align-content: flex-start;
+
+                    .header {
+                        display: block;
+                        padding-top: 1.5em;
+                        text-align: left;
                     }
-                    
-                    .flexcontainer {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-around;
+
+                    .sidebar {
+                        position: absolute;
+                        width: 25vw;
+                        padding-left: 30px;
                     }
-                    
-                    .flex-child-green {
-                        display: flex;
-                        flex-direction: column;
-                        width: 50%;
-                        height: 50%;
-                    }
-                    
-                    .flex-child-magenta {
-                        display: flex;
-                        flex-direction: column;
-                        width: 50%;
-                    }
-                    
-                    #advert {
-                        width: auto;
-                        height: auto;
-                    }
-                    
-                    .textsunglasses {
-                        top: 0;
-                        display: flex;
-                        align-items: center;
-                        flex-direction: row;
-                        justify-content: start;
-                    }
-                    
-                    .postdescription {
-                        display: flex;
-                        flex-direction: column;
-                        order: 0;
-                        margin: 0 10px;
-                    }
-                    
-                    .tipsunglasses {
-                        display: flex;
-                        order: 1;
-                        margin: 0 10px;
-                    }
-                    
-                    .video-player {
-                        position: relative;
-                        top: 0;
-                        padding: 80% 0 0 0;
-                    }
-                    
-                    #main-content {
-                        left: 0;
-                    }
-                </style>
+                }
+
+                #cookie-consent {
+                    position: fixed;
+                    height: 100vh;
+                    width: 100vw;
+                    top: 0px;
+                    left: 0px;
+                    z-index: 100;
+                }
+
+                .cookie-consent-background {
+                    position: fixed;
+                    height: 100%;
+                    width: 100%;
+                    top: 0px;
+                    left: 0px;
+                    z-index: 101;
+                }
+
+                .cookie-consent-content {
+                    position: fixed;
+                    height: 100%;
+                    width: 100%;
+                    top: 0px;
+                    left: 0px;
+                    z-index: 102;
+                    padding: 0px 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    vertical-align: middle;
+                    backdrop-filter: blur(1px);
+                    background-color: rgba(0, 0, 0, .4);
+                }
+
+                .layout {
+                    position: relative;
+                }
+
+                .inlinepost {
+                    position: absolute;
+                    left: 0px;
+                }
+
+                .text-white {
+                    color: white;
+                }
+
+                .hidden {
+                    display: none;
+                }
+
+                .vid-div {
+                    margin: 20px 0px;
+                    position: relative;
+                }
+
+                #vid-blocker {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 5;
+                }
+
+                .sidenav {
+                    width: 250px;
+                    align-self: flex-start;
+                }
+
+                .post {
+                    float: right;
+                    width: 50vw;
+                    height: 50vw;
+                }
+
+                .inlinepost {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    align-content: flex-start;
+                }
+
+                .flexcontainer {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+
+                .flex-child-green {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    height: 50%;
+                }
+
+                .flex-child-magenta {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                }
+
+                #advert {
+                    width: auto;
+                    height: auto;
+                }
+
+                .textsunglasses {
+                    top: 0;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: start;
+                }
+
+                .postdescription {
+                    display: flex;
+                    flex-direction: column;
+                    order: 0;
+                    margin: 0 10px;
+                }
+
+                .tipsunglasses {
+                    display: flex;
+                    order: 1;
+                    margin: 0 10px;
+                }
+
+                .video-player {
+                    position: relative;
+                    top: 0;
+                    padding: 80% 0 0 0;
+                }
+
+                #main-content {
+                    left: 0;
+                }
+            </style>
 
 
-                <div id="layout" class="pure-g">
-                    <div id="cookie-consent" class="pure-u-1">
-                        <div class="cookie-consent-background"></div>
-                        <div class="cookie-consent-content">
-                            <h3 class="text-white">
-                                We use cookies to improve your experience.
-                            </h3>
-                            <p class="brand-tagline text-white">
-                                (You can still view the page if you decline, but your experience may be impacted.)
-                            </p>
-                            <p>
-                                <button class="pure-button button-large">Accept</button>
-                                <button class="pure-button button-large decline-button">Decline</button>
-                            </p>
+            <div id="layout" class="pure-g">
+                <div id="cookie-consent" class="pure-u-1">
+                    <div class="cookie-consent-background"></div>
+                    <div class="cookie-consent-content">
+                        <h3 class="text-white">
+                            We use cookies to improve your experience.
+                        </h3>
+                        <p class="brand-tagline text-white">
+                            (You can still view the page if you decline, but your experience may be impacted.)
+                        </p>
+                        <p>
+                            <button class="pure-button button-large">Accept</button>
+                            <button class="pure-button button-large decline-button">Decline</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="inlinepost">
+                    <div id="sidenav" class="sidenav hidden">
+                        <div class="sidebar pure-u-1 pure-u-md-1-4">
+                            <div class="header">
+                                <h1 class="brand-title">NEVER GONNA</h1>
+                                <h2 class="brand-tagline">
+                                    Give you up.<br> Let you down.<br> Run around.<br> Desert you.<br>
+                                </h2>
+                                <h3>You've been rolled. </h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="inlinepost">
-                        <div id="sidenav" class="sidenav hidden">
-                            <div class="sidebar pure-u-1 pure-u-md-1-4">
-                                <div class="header">
-                                    <h1 class="brand-title">NEVER GONNA</h1>
-                                    <h2 class="brand-tagline">
-                                        Give you up.<br> Let you down.<br> Run around.<br> Desert you.<br>
-                                    </h2>
-                                    <h3>You've been rolled. </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content pure-u-1 pure-u-md-3-4">
-                            <div class="posts">
-                                <section class="post">
-                                    <header class="post-header" style="margin-left: 20px; padding-left: 20px;">
-                                        <h2 class="post-title">An Untitled Goose Game</h2>
-                                        <div id="textsunglasses" class="textsunglasses hidden">
-                                            <p class="post-description">Jk ha ha Get Rickroll'd In HD</p>
-                                            <img class="tipsunglasses" src="assets/images/tipsunglasses.png" alt="Cool Sunglasses" height="49" width="70">
-                                        </div>
-                                    </header>
-                                    <div class="vid-div" style="padding-left: 20px;">
-                                        <div id="vid-blocker"></div>
-
-                                        <body>
-                                            <video id="video-player1" class="video-js" vjs-theme-forest controls preload="auto" poster="assets/images/tumbnail.jpg" vjs-fluid data-setup="{}">
-                                                <source id="video-player1-source" src="assets/videos/Goose-Crimes.mp4"
-                                                    type="video/mp4" />
-                                                <p class="vjs-no-js">
-                                                    To view this video please enable JavaScript, and consider upgrading
-                                                    to a
-                                                    web browser that
-                                                    <a href="https://videojs.com/html5-video-support/"
-                                                        target="_blank">supports HTML5 video</a>
-                                                </p>
-                                            </video>
-
-                                            <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
-                                            <script>
-                                                document.addEventListener("DOMContentLoaded", function(event) {
-                                                    var player = videojs('video-player1');
-                                                    player.aspectRatio('16:9');
-                                                    player.muted(true);
-                                                    player.autoplay('true');
-                                                    var cookieConsent = document.querySelector('#cookie-consent');
-                                                    var sidenav = document.querySelector('#sidenav');
-                                                    var textsunglasses = document.querySelector('#textsunglasses');
-                                                    var postdescription = document.querySelector('#post-description');
-                                                    var untitledgoosegamebutton = document.querySelector('#untitledgoosegamebutton');
-                                                    var goosecontent = document.querySelector('.goose-content');
-                                                    var githubbutton = document.querySelector('#downloads');
-
-                                                    document.addEventListener('click', interaction);
-                                                    document.addEventListener('keydown', interaction);
-
-                                                    function interaction(event) {
-                                                        try {
-                                                            cookieConsent.classList.add('hidden');
-                                                        }
-                                                        catch {
-                                                            // Do nothing xD
-                                                        }
-                                                        document.removeEventListener("click", interaction);
-                                                        document.removeEventListener("keydown", interaction);
-                                                        
-                                                        playVideo("assets/videos/Rick-Astley-Never-Gonna-Give-You-Up-1080p60-60fps.mp4", 'video/mp4');
-                                                        videojs('video-player1', {}, function() {
-                                                            this.on('loadedmetadata', function() {
-
-                                                                //sleep(333);
-
-                                                                githubbutton.classList.remove('hidden');
-                                                                goosecontent.classList.add('hidden');
-                                                                sidenav.classList.remove('hidden');
-                                                                textsunglasses.classList.remove('hidden');
-                                                                postdescription.classList.remove('hidden');
-                                                                untitledgoosegamebutton.classList.remove('hidden');
-
-                                                            });
-                                                        });
-                                                    }
-                                                    
-                                                    function sleep(milliseconds) {
-                                                        const date = Date.now();
-                                                        let currentDate = null;
-                                                        do {
-                                                            currentDate = Date.now();
-                                                        } while (currentDate - date < milliseconds);
-                                                    }
-
-                                                    function playVideo(videoSource, type) {
-                                                        if (!player.paused) {
-                                                            player.pause();
-                                                        }
-
-                                                        player.src({
-                                                            type: type,
-                                                            src: videoSource
-                                                        });
-
-                                                        player.load();
-                                                        player.play();
-                                                        player.muted(false);
-                                                    }
-                                                });
-                                            </script>
-                                        </body>
+                    <div class="content pure-u-1 pure-u-md-3-4">
+                        <div class="posts">
+                            <section class="post">
+                                <header class="post-header" style="margin-left: 20px; padding-left: 20px;">
+                                    <h2 class="post-title">An Untitled Goose Game</h2>
+                                    <div id="textsunglasses" class="textsunglasses hidden">
+                                        <p class="post-description">Jk ha ha Get Rickroll'd In HD</p>
+                                        <img class="tipsunglasses" src="assets/images/tipsunglasses.png"
+                                            alt="Cool Sunglasses" height="49" width="70">
                                     </div>
-                                    <div class="post-description" style="padding-left: 20px;">
-                                        <div class="goose-content">
-                                            <header>
-                                                <h1 style="position: relative; left: 45px;" id="goosetitle">Untitled
-                                                    <br> Goose&nbsp;Game
-                                                </h1>
-                                                <h2 class="tagline">by House House</h2>
-                                            </header>
+                                </header>
+                                <div class="vid-div" style="padding-left: 20px;">
+                                    <div id="vid-blocker"></div>
 
-                                            <div id="game_area_description" class="game_area_description">
-                                                <h2>About This Game</h2>
-                                                It's a lovely morning in the village and you are a horrible goose.
-                                                <br><br>Untitled Goose Game is a slapstick-stealth-sandbox, where you are a goose let loose on an unsuspecting village. Make your way around town, from peoples' back gardens to the high street shops to the
-                                                village green, setting up pranks, stealing hats, honking a lot, and generally ruining everyone’s day.
-                                                <h2 class="bb_tag">Featuring:</h2>
-                                                <ul class="bb_ul">
-                                                    <li>A horrible goose (that's you)<br></li>
-                                                    <li>A town full of people just trying to get on with their day (you hate them)<br></li>
-                                                    <li>A dedicated honk button (!!!)</li>
-                                                </ul><img src="assets/images/chase600.png">
-                                                <h2 class="bb_tag">AND ALSO</h2>Oh dear! Two horrible geese!<br><br>You can now enjoy Untitled Goose Game with a friend, in a new two-player cooperative mode. Play through the whole game as two horrible geese, honking twice
-                                                as much, teaming up to plan pranks, and generally ruining everyone's day, together.<br><br>
-                                                <ul class="bb_ul">
-                                                    <li>A free update for all owners of Untitled Goose Game<br></li>
-                                                    <li>Play through the entire game with two players<br></li>
-                                                    <li>New goose, new honk, still horrible</li>
-                                                </ul><img src="assets/images/cooppile600.png">
-                                            </div>
+                                    <body>
+                                        <video id="video-player1" class="video-js" vjs-theme-forest controls
+                                            preload="auto" poster="assets/images/tumbnail.jpg" vjs-fluid
+                                            data-setup="{}">
+                                            <source id="video-player1-source" src="assets/videos/Goose-Crimes.mp4"
+                                                type="video/mp4" />
+                                            <p class="vjs-no-js">
+                                                To view this video please enable JavaScript, and consider upgrading
+                                                to a
+                                                web browser that
+                                                <a href="https://videojs.com/html5-video-support/"
+                                                    target="_blank">supports HTML5 video</a>
+                                            </p>
+                                        </video>
+
+                                        <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+                                        <script>
+                                            document.addEventListener("DOMContentLoaded", function (event) {
+                                                var player = videojs('video-player1');
+                                                player.aspectRatio('16:9');
+                                                player.muted(true);
+                                                player.autoplay('true');
+                                                var cookieConsent = document.querySelector('#cookie-consent');
+                                                var sidenav = document.querySelector('#sidenav');
+                                                var textsunglasses = document.querySelector('#textsunglasses');
+                                                var postdescription = document.querySelector('#post-description');
+                                                var untitledgoosegamebutton = document.querySelector('#untitledgoosegamebutton');
+                                                var goosecontent = document.querySelector('.goose-content');
+                                                var githubbutton = document.querySelector('#downloads');
+
+                                                document.addEventListener('click', interaction);
+                                                document.addEventListener('keydown', interaction);
+
+                                                function interaction(event) {
+                                                    const specialKeys = [
+                                                        "Control", "Alt", "Shift", "CapsLock", "Escape",
+                                                        "PrintScreen", "ScrollLock", "NumLock", "Meta",
+                                                        "Numpad0", "Numpad1", "Numpad2", "Numpad3",
+                                                        "Numpad4", "Numpad5", "Numpad6", "Numpad7",
+                                                        "Numpad8", "Numpad9"
+                                                    ];
+                                                    if (specialKeys.includes(event.key)) 
+                                                        return;
+
+                                                    try {
+                                                        cookieConsent.classList.add('hidden');
+                                                    }
+                                                    catch {
+                                                        // Do nothing xD
+                                                    }
+                                                    document.removeEventListener("click", interaction);
+                                                    document.removeEventListener("keydown", interaction);
+
+                                                    playVideo("assets/videos/Rick-Astley-Never-Gonna-Give-You-Up-1080p60-60fps.mp4", 'video/mp4');
+                                                    videojs('video-player1', {}, function () {
+                                                        this.on('loadedmetadata', function () {
+
+                                                            //sleep(333);
+
+                                                            githubbutton.classList.remove('hidden');
+                                                            goosecontent.classList.add('hidden');
+                                                            sidenav.classList.remove('hidden');
+                                                            textsunglasses.classList.remove('hidden');
+                                                            postdescription.classList.remove('hidden');
+                                                            untitledgoosegamebutton.classList.remove('hidden');
+                                                            
+                                                            document.getElementsByClassName("vid-div")[0].scrollIntoViewIfNeeded();
+                                                        });
+                                                    });
+                                                }
+
+                                                function sleep(milliseconds) {
+                                                    const date = Date.now();
+                                                    let currentDate = null;
+                                                    do {
+                                                        currentDate = Date.now();
+                                                    } while (currentDate - date < milliseconds);
+                                                }
+
+                                                function playVideo(videoSource, type) {
+                                                    if (!player.paused) {
+                                                        player.pause();
+                                                    }
+
+                                                    player.src({
+                                                        type: type,
+                                                        src: videoSource
+                                                    });
+
+                                                    player.load();
+                                                    player.play();
+                                                    player.muted(false);
+                                                }
+                                            });
+                                        </script>
+                                    </body>
+                                </div>
+                                <div class="post-description" style="padding-left: 20px;">
+                                    <div class="goose-content">
+                                        <header>
+                                            <h1 style="position: relative; left: 45px;" id="goosetitle">Untitled
+                                                <br> Goose&nbsp;Game
+                                            </h1>
+                                            <h2 class="tagline">by House House</h2>
+                                        </header>
+
+                                        <div id="game_area_description" class="game_area_description">
+                                            <h2>About This Game</h2>
+                                            It's a lovely morning in the village and you are a horrible goose.
+                                            <br><br>Untitled Goose Game is a slapstick-stealth-sandbox, where you are a
+                                            goose let loose on an unsuspecting village. Make your way around town, from
+                                            peoples' back gardens to the high street shops to the
+                                            village green, setting up pranks, stealing hats, honking a lot, and
+                                            generally ruining everyone’s day.
+                                            <h2 class="bb_tag">Featuring:</h2>
+                                            <ul class="bb_ul">
+                                                <li>A horrible goose (that's you)<br></li>
+                                                <li>A town full of people just trying to get on with their day (you hate
+                                                    them)<br></li>
+                                                <li>A dedicated honk button (!!!)</li>
+                                            </ul><img src="assets/images/chase600.png">
+                                            <h2 class="bb_tag">AND ALSO</h2>Oh dear! Two horrible geese!<br><br>You can
+                                            now enjoy Untitled Goose Game with a friend, in a new two-player cooperative
+                                            mode. Play through the whole game as two horrible geese, honking twice
+                                            as much, teaming up to plan pranks, and generally ruining everyone's day,
+                                            together.<br><br>
+                                            <ul class="bb_ul">
+                                                <li>A free update for all owners of Untitled Goose Game<br></li>
+                                                <li>Play through the entire game with two players<br></li>
+                                                <li>New goose, new honk, still horrible</li>
+                                            </ul><img src="assets/images/cooppile600.png">
                                         </div>
+                                    </div>
 
 
-                                        <p id="post-description" class="post-description hidden">
-                                            No controls on this video. You have no control over this situation.<br>
-                                            <br>
-                                            <br>
-                                            <br> ...unless you exit the page.
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br> By: Ju1.js aka. Ju1playz
-                                            <br>
-                                        </p>
-                                        <br>
-                                        <a id="untitledgoosegamebutton" href="untitledgoosegame.html" class="btn btn-forward hidden"><span class="icon"></span>Genuine Page on: Untitled Goose Game</a>
+                                    <p id="post-description" class="post-description hidden">
+                                        No controls on this video. You have no control over this situation.<br>
                                         <br>
                                         <br>
-                                        <h4>
-                                            <!--Get A Cheap Minecraft Server From <a href="https://jeekie.host" target="_blank">Jeekie.Host</a>!-->
-                                        </h4>
-                                        <!--<a href="https://jeekie.host" target="_blank">
+                                        <br> ...unless you exit the page.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br> By: Ju1.js aka. Ju1playz
+                                        <br>
+                                    </p>
+                                    <br>
+                                    <a id="untitledgoosegamebutton" href="untitledgoosegame.html"
+                                        class="btn btn-forward hidden"><span class="icon"></span>Genuine Page on:
+                                        Untitled Goose Game</a>
+                                    <br>
+                                    <br>
+                                    <h4>
+                                        <!--Get A Cheap Minecraft Server From <a href="https://jeekie.host" target="_blank">Jeekie.Host</a>!-->
+                                    </h4>
+                                    <!--<a href="https://jeekie.host" target="_blank">
                                             <img src="assets/images/2Cy2ko6.gif"></a>
                                         </a>-->
-                                    </div>
-                                </section>
-                            </div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
+    </div>
     </div>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V20FP9DTF5"></script>
     <script>
